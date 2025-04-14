@@ -12,6 +12,6 @@ public class Destination_Detail_Activities extends AppCompatActivity {
         setContentView(R.layout.activity_destination_details);
         String countryName = getIntent().getStringExtra("name");
         TextView titleTextView = findViewById(R.id.country_name_text);
-        titleTextView.setText("Info about + " + countryName);
+        titleTextView.setText("Info about " + countryName);
     }
 }
