@@ -56,6 +56,12 @@ public class CountryGridAdaptor extends BaseAdapter {
         countryImageButton.setOnClickListener(v->{
             Intent intent = new Intent(context, Destination_Detail_Activities.class);
             intent.putExtra("name", country.getName());
+            intent.putExtra("history", country.getHistoricalInfo());
+            intent.putExtra("geography", country.getGeographyInfo());
+            intent.putExtra("img1", country.getImgID1());
+            intent.putExtra("img2", country.getImgID2());
+            intent.putExtra("img3", country.getImgID3());
+            intent.putExtra("img4", country.getImageResourceID());
             context.startActivity(intent);
         });
 
