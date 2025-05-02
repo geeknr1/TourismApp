@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/name"
         android:layout_gravity="center_vertical|center_horizontal"
         android:textColorHint="#000000"
         android:hint="Name: "  />
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/surname"
         android:layout_gravity="center_vertical|center_horizontal"
         android:textColorHint="#000000"
         android:hint="Surname: " />
@@ -43,8 +43,17 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/age"
         android:ems="10"
-        android:id="@+id/editText3"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textColorHint="#000000"
+        android:hint="Age: "/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/email"
         android:layout_gravity="center_vertical|center_horizontal"
         android:textColorHint="#000000"
         android:hint="Email: "  />
@@ -53,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:id="@+id/editText4"
+        android:id="@+id/phoneNumber"
         android:layout_gravity="center_vertical|center_horizontal"
         android:textColorHint="#000000"
         android:hint="Phone number: " />
@@ -63,7 +72,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText5"
+        android:id="@+id/password"
         android:layout_gravity="center_vertical|center_horizontal"
         android:textColorHint="#000000"
         android:hint="Password: "  />
@@ -73,7 +82,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText6"
+        android:id="@+id/passwordRe"
         android:layout_gravity="center_vertical|center_horizontal"
         android:textColorHint="#000000"
         android:hint="Retype Password: " />

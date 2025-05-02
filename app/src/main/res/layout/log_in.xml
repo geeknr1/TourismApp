@@ -35,9 +35,8 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/loginUser"
         android:layout_gravity="center_vertical|center_horizontal"
         android:textColorHint="#000000"
         android:hint="Username: "  />
@@ -47,7 +46,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/passwordUser"
         android:layout_gravity="center_vertical|center_horizontal"
         android:textColorHint="#000000"
         android:hint="Password: " />
