@@ -19,7 +19,7 @@ public class SignUp extends AppCompatActivity {
     EditText password;
     EditText rePassword;
     Button signUp;
-    private DataBaseHelper dbHelp;
+    private DbHelper dbHelp;
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
@@ -51,7 +51,7 @@ public class SignUp extends AppCompatActivity {
                 Toast.makeText(this, "Password mismatch", Toast.LENGTH_SHORT).show();
                 return;
             }
-            boolean ok = dbHelp.addUser(strName, strSurname, strEmail, strPhoneNumber, strPassword);
+            boolean ok = dbHelp.addUser(strName, strSurname, strAge, strEmail, strPhoneNumber, strPassword);
 
             if (ok == true){
                 Toast.makeText(this, "User added in database", Toast.LENGTH_SHORT).show();

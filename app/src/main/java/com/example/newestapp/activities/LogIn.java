@@ -15,7 +15,7 @@ public class LogIn extends AppCompatActivity {
     private EditText password;
     private Button buttonLogIn;
     private Button buttonSignUp;
-    DataBaseHelper dbHelp;
+    DbHelper dbHelp;
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.log_in);
@@ -25,7 +25,7 @@ public class LogIn extends AppCompatActivity {
         buttonLogIn = findViewById(R.id.loginButton);
         buttonSignUp = findViewById(R.id.signupButton);
 
-        dbHelp = new DataBaseHelper(this);
+        dbHelp = new DbHelper(this);
 
         buttonLogIn.setOnClickListener(v->{
             String user = username.getText().toString().trim();
@@ -35,7 +35,7 @@ public class LogIn extends AppCompatActivity {
                 Toast.makeText(this, "Enter both fields", Toast.LENGTH_SHORT).show(); // toast se ocupa de popup-ul unui text anume
                 return; // opreste activitatea
             }
-            if(dbHelp.checkUser(user, pass)){
+            if(dbHelp.checkUser(user, pass)){ // the 'checkUser' method is of type 'boolean' since it's written in an 'if' statement
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(LogIn.this, MainActivity.class));
             }

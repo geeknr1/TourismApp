@@ -28,22 +28,22 @@ public class MainActivity extends Activity {
         CountryGridAdaptor adaptor = new CountryGridAdaptor(this, countries);
         gridView.setAdapter(adaptor);
 
-        Button showUsersButton = findViewById(R.id.dbButton);
-
-        DataBaseHelper dbHelper = new DataBaseHelper(this);
-
-        showUsersButton.setOnClickListener(v -> {
-            List<String> users = dbHelper.getAllUsers();
-            if (users.isEmpty()) {
-                Toast.makeText(this, "No users in the database.", Toast.LENGTH_SHORT).show();
-            } else {
-                StringBuilder builder = new StringBuilder();
-                for (String user : users) {
-                    builder.append(user).append("\n");
-                }
-                Toast.makeText(this, builder.toString(), Toast.LENGTH_LONG).show();
-            }
-        });
+//        Button showUsersButton = findViewById(R.id.dbButton);
+//
+//        DbHelper dbHelper = new DbHelper(this);
+//
+//        showUsersButton.setOnClickListener(v -> {
+//            List<String> users = dbHelper.getAllUsers();
+//            if (users.isEmpty()) {
+//                Toast.makeText(this, "No users in the database.", Toast.LENGTH_SHORT).show();
+//            } else {
+//                StringBuilder builder = new StringBuilder();
+//                for (String user : users) {
+//                    builder.append(user).append("\n");
+//                }
+//                Toast.makeText(this, builder.toString(), Toast.LENGTH_LONG).show();
+//            }
+//        });
 
     }
 }

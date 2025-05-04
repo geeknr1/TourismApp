@@ -35,7 +35,6 @@ dependencies {
 
     implementation(libs.appcompat)
     implementation(libs.material)
-    implementation("implementation 'org.mindrot:jbcrypt:0.4'")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -1,6 +1,8 @@
 package com.example.newestapp.activities;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Base64;
@@ -25,7 +27,7 @@ public class DbHelper extends SQLiteOpenHelper {
             colID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + colName + " TEXT NOT NULL, "
             + colSurname + " TEXT NOT NULL, " + colAge + " TEXT NOT NULL, " + colEmail +
             " TEXT UNIQUE NOT NULL, " + colPhoneNumber + " TEXT NOT NULL, " +
-            colPassword + " TEXT UNIQUE NOT NULL ";
+            colPassword + " TEXT UNIQUE NOT NULL"+");";
 
     public DbHelper(Context context){
         super(context, dbName, null, dbVersion);
@@ -36,11 +38,11 @@ public class DbHelper extends SQLiteOpenHelper {
     }
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
-        db.execSQL("DROP TABLE IF EXISTS", tableName);
+        db.execSQL("DROP TABLE IF EXISTS " + tableName);
         onCreate(db);
     }
 
-    public static String hashPassword(String password) throws NoSuchAlgorithmException {
+    public static String hashPassword(String password) throws NoSuchAlgorithmException { // this is exception handling
         MessageDigest messageDigest = MessageDigest.getInstance("SHA-512");
         messageDigest.reset();
         messageDigest.update(password.getBytes());
@@ -63,9 +65,52 @@ public class DbHelper extends SQLiteOpenHelper {
         secureRandom.nextBytes(salt);
         return android.util.Base64.encodeToString(salt, Base64.NO_WRAP);
     }
-    public void addUser(String name, String surname, String age, String email, String phoneNumber, String password){
-        //String hashed = BCrypt.hashpw
+    public boolean addUser(String name, String surname, String age, String email, String phoneNumber, String password){
+        try {
+            String hashPass = hashPassword(password);
+        }catch(Exception e){
+            System.out.println("Password error.");
+        }
+
+        SQLiteDatabase dbUser = this.getWritableDatabase();
+        ContentValues content = new ContentValues();
+        content.put(colName, name);
+        content.put(colSurname, surname);
+        content.put(colAge, age);
+        content.put(colEmail, email);
+        content.put(colPhoneNumber, phoneNumber);
+
+        long id = -1;
+        try{
+            id = dbUser.insertOrThrow(tableName, null, content);
+        }catch (Exception e){
+            System.out.println("Database error");
+        }
+
+        finally {
+            dbUser.close();
+        }
+
+        return id != -1;
     }
+
+    public boolean checkUser(String userName, String password){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(tableName, new String[] {colPassword}, colName + "=?", new String[] {userName}, null, null, null);
+
+        if(cursor != null && cursor.moveToFirst()){
+            String storedHash = cursor.getString(cursor.getColumnIndexOrThrow(colPassword));
+            try {
+                return storedHash == hashPassword(password);
+            }catch(Exception e){
+                System.out.println("Database error");
+            }
+            finally{cursor.close(); db.close();}
+        }
+        return false;
+    }
+
+
 
 
 
