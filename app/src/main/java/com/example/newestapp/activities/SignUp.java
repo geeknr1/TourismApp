@@ -47,10 +47,11 @@ public class SignUp extends AppCompatActivity {
                 return;
             }
 
-            if(!(strPassword.equals(strPassword))){
-                Toast.makeText(this, "Password mismatch", Toast.LENGTH_SHORT).show();
-                return;
-            }
+//            if(!(strPassword.equals(rePassword))){
+//                Toast.makeText(this, "Password mismatch", Toast.LENGTH_SHORT).show();
+//                return;
+//
+            dbHelp = new DbHelper(this);
             boolean ok = dbHelp.addUser(strName, strSurname, strAge, strEmail, strPhoneNumber, strPassword);
 
             if (ok == true){

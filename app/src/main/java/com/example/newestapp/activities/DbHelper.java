@@ -80,6 +80,12 @@ public class DbHelper extends SQLiteOpenHelper {
         content.put(colEmail, email);
         content.put(colPhoneNumber, phoneNumber);
 
+        try {
+            content.put(colPassword, hashPassword(password));
+        }catch(Exception e){
+            System.out.println("Database error.");
+        }
+
         long id = -1;
         try{
             id = dbUser.insertOrThrow(tableName, null, content);
@@ -101,7 +107,7 @@ public class DbHelper extends SQLiteOpenHelper {
         if(cursor != null && cursor.moveToFirst()){
             String storedHash = cursor.getString(cursor.getColumnIndexOrThrow(colPassword));
             try {
-                return storedHash == hashPassword(password);
+                return storedHash.equals(hashPassword(password));
             }catch(Exception e){
                 System.out.println("Database error");
             }
