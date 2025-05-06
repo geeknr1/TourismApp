@@ -1,6 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <resources>
     <string name="app_name">NewestApp</string>
     <string name="hello_world">Welcome To GeoGuide!</string>
     <string name="choose_dest">Choose your destination!</string>
+
+    <string-array name="age_groups">
+        <item>Children (0-12)</item>
+        <item>Teens to Young Adults (13-24)</item>
+        <item>Adults (24-50)</item>
+        <item>Seniors (51-RIP)</item>
+    </string-array>
 
 </resources>

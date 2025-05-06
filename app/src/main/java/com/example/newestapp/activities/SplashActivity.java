@@ -60,7 +60,7 @@ public class SplashActivity extends AppCompatActivity {
         imgThree.setVisibility(View.VISIBLE);
 
         background.postDelayed(()->{
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, LogIn.class));
             finish();
         },3000);
 

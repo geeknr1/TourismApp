@@ -13,20 +13,23 @@ import java.security.SecureRandom;
 
 public class DbHelper extends SQLiteOpenHelper {
     private static final String dbName = "GeoGuide.db";
-    private static final int dbVersion = 1;
+    private static final int dbVersion = 2;
     private static final String tableName = "Users";
     private static final String colID = "ID";
     private static final String colName = "Name";
     private static final String colSurname = "Surname";
     private static final String colAge = "Age";
     private static final String colEmail = "Email";
-    private static final String colPhoneNumber = "Phone Number";
+    private static final String colPhoneNumber = "Phone_Number";
     private static final String colPassword = "Password";
 
     private static final String createTable = "CREATE TABLE " + tableName + " (" +
-            colID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + colName + " TEXT NOT NULL, "
-            + colSurname + " TEXT NOT NULL, " + colAge + " TEXT NOT NULL, " + colEmail +
-            " TEXT UNIQUE NOT NULL, " + colPhoneNumber + " TEXT NOT NULL, " +
+            colID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+            colName + " TEXT NOT NULL, " +
+            colSurname + " TEXT NOT NULL, " +
+            colAge + " TEXT NOT NULL, " +
+            colEmail + " TEXT UNIQUE NOT NULL, " +
+            colPhoneNumber + " TEXT NOT NULL, " +
             colPassword + " TEXT UNIQUE NOT NULL"+");";
 
     public DbHelper(Context context){
@@ -70,6 +73,7 @@ public class DbHelper extends SQLiteOpenHelper {
             String hashPass = hashPassword(password);
         }catch(Exception e){
             System.out.println("Password error.");
+            return false;
         }
 
         SQLiteDatabase dbUser = this.getWritableDatabase();
@@ -84,17 +88,15 @@ public class DbHelper extends SQLiteOpenHelper {
             content.put(colPassword, hashPassword(password));
         }catch(Exception e){
             System.out.println("Database error.");
+            return false;
         }
 
-        long id = -1;
+        long id;
         try{
-            id = dbUser.insertOrThrow(tableName, null, content);
+            id = dbUser.insert(tableName, null, content);
         }catch (Exception e){
             System.out.println("Database error");
-        }
-
-        finally {
-            dbUser.close();
+            return false;
         }
 
         return id != -1;

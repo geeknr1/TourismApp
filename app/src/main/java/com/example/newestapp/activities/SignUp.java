@@ -54,7 +54,7 @@ public class SignUp extends AppCompatActivity {
             dbHelp = new DbHelper(this);
             boolean ok = dbHelp.addUser(strName, strSurname, strAge, strEmail, strPhoneNumber, strPassword);
 
-            if (ok == true){
+            if (ok){
                 Toast.makeText(this, "User added in database", Toast.LENGTH_SHORT).show();
                 finish(); // opreste activitatea curenta si ma duce la cea de dinainte
             }

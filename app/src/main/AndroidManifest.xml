@@ -23,11 +23,11 @@
         <activity android:name=".activities.SignUp"
             android:exported="true"/>
 
-        <activity android:name=".activities.SplashActivity"
+        <activity android:name=".activities.LogIn"
             android:exported="true"/>
 
 
-        <activity android:name=".activities.LogIn"
+        <activity android:name=".activities.SplashActivity"
             android:exported="true">
 
         <intent-filter>
