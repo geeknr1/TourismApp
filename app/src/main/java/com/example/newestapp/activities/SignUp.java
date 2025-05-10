@@ -1,9 +1,12 @@
 package com.example.newestapp.activities;
 
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,10 +22,24 @@ public class SignUp extends AppCompatActivity {
     EditText password;
     EditText rePassword;
     Button signUp;
+    VideoView videoBackground;
     private DbHelper dbHelp;
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
+
+        videoBackground = findViewById(R.id.backgroundSignUp);
+        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.signup);
+        videoBackground.setVideoURI(uri);
+        videoBackground.start();
+
+        videoBackground.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                mediaPlayer.setLooping(true);
+            }
+        });
+
 
         name = findViewById(R.id.name);
         surname = findViewById(R.id.surname);
@@ -62,6 +79,29 @@ public class SignUp extends AppCompatActivity {
                 Toast.makeText(this, "User already taken", Toast.LENGTH_SHORT).show();
             }
         });
+    }
 
+    @Override
+    protected void onPostResume(){
+        videoBackground.resume();
+        super.onPostResume();
+    }
+
+    @Override
+    protected void onRestart(){
+        videoBackground.start();
+        super.onRestart();
+    }
+
+    @Override
+    protected void onPause(){
+        videoBackground.suspend();
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy(){
+        videoBackground.stopPlayback();
+        super.onDestroy();
     }
 }
