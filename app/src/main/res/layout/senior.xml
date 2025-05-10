@@ -16,7 +16,7 @@
         android:paddingEnd="16dp">
 
         <TextView
-            android:id="@+id/locationName"
+            android:id="@+id/historicalLocationName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Louvre"
@@ -25,7 +25,7 @@
             android:textSize="50sp"/>
 
         <TextView
-            android:id="@+id/locationInfo"
+            android:id="@+id/historicInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="General info about historic location."
@@ -43,5 +43,29 @@
             android:id="@+id/videoLouvre"
             android:layout_width="match_parent"
             android:layout_height="200dp"/>
+
+        <TextView
+            android:id="@+id/geographicalLocationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wellness location name."
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:id="@+id/geographyInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General info about wellness location."
+            android:textColor="@color/black"
+            android:textSize="10sp"/>
+
+        <ImageView
+            android:id="@+id/wellnessLocationImg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@drawable/louvremuseum"/>
     </LinearLayout>
 </ScrollView>

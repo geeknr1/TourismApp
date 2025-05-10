@@ -4,40 +4,4 @@
     <string name="hello_world">Welcome To GeoGuide!</string>
     <string name="choose_dest">Choose your destination!</string>
 
-    <string-array name="egypt_age_groups">
-        <item>Egypt</item>
-        <item>Vacation Houses</item>
-        <item>Children (0-12)</item>
-        <item>Teens to Young Adults (13-24)</item>
-        <item>Adults (24-50)</item>
-        <item>Seniors (51-RIP)</item>
-    </string-array>
-
-    <string-array name="france_age_groups">
-        <item>France</item>
-        <item>Vacation Houses</item>
-        <item>Children (0-12)</item>
-        <item>Teens to Young Adults (13-24)</item>
-        <item>Adults (24-50)</item>
-        <item>Seniors (51-RIP)</item>
-    </string-array>
-
-    <string-array name="uk_age_groups">
-        <item>United Kingdom of Great Britain</item>
-        <item>Vacation Houses</item>
-        <item>Children (0-12)</item>
-        <item>Teens to Young Adults (13-24)</item>
-        <item>Adults (24-50)</item>
-        <item>Seniors (51-RIP)</item>
-    </string-array>
-
-    <string-array name="japan_age_groups">
-        <item>Japan</item>
-        <item>Vacation Houses</item>
-        <item>Children (0-12)</item>
-        <item>Teens to Young Adults (13-24)</item>
-        <item>Adults (24-50)</item>
-        <item>Seniors (51-RIP)</item>
-    </string-array>
-
 </resources>

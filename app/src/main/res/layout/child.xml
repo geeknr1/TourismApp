@@ -19,7 +19,7 @@
             android:id="@+id/locationName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Louvre"
+            android:text="Fun Location"
             android:layout_gravity="center_horizontal|center_vertical"
             android:textColor="@color/black"
             android:textSize="50sp"/>
@@ -28,19 +28,25 @@
             android:id="@+id/locationInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="General info about historic location."
+            android:text="What to know."
             android:textColor="@color/black"
             android:textSize="10sp"/>
 
         <ImageView
-            android:id="@+id/museum"
+            android:id="@+id/funImg"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center_horizontal|center_vertical"
             android:src="@drawable/louvremuseum"/>
 
+        <TextView
+            android:id="@+id/funFacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fun facts"/>
+
         <VideoView
-            android:id="@+id/videoLouvre"
+            android:id="@+id/funVid"
             android:layout_width="match_parent"
             android:layout_height="200dp"/>
     </LinearLayout>

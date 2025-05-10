@@ -22,10 +22,6 @@ import com.example.newestapp.data.DataProvider;
 import com.example.newestapp.models.Country;
 
 public class MainActivity extends Activity {
-    private TextView egypt;
-    private TextView france;
-    private TextView uk;
-    private TextView japan;
 
     private boolean egyptInit;
     private boolean franceInit;
@@ -38,10 +34,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        egypt = findViewById(R.id.egypt);
-        france = findViewById(R.id.france);
-        uk = findViewById(R.id.uk);
-        japan = findViewById(R.id.japan);
 
         spinnerSetup(R.id.spinnerEgypt, "Egypt");
         spinnerSetup(R.id.spinnerFrance, "France");
@@ -52,29 +44,36 @@ public class MainActivity extends Activity {
 
     public void spinnerSetup(int spinnerID, String country){
         Spinner spinner = findViewById(spinnerID);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.france_age_groups, android.R.layout.simple_spinner_item);
+        int arrayReferenceCountries;
+        switch (country){
+            case "Egypt":
+                arrayReferenceCountries = R.array.egypt_age_groups;
+                break;
+            case "France":
+                arrayReferenceCountries = R.array.france_age_groups;
+                break;
+            case "United Kingdom of Great Britain":
+                arrayReferenceCountries = R.array.japan_age_groups;
+                break;
+            case "Japan":
+                arrayReferenceCountries = R.array.uk_age_groups;
+                break;
+            default:
+                arrayReferenceCountries = R.array.france_age_groups;
+                break;
+        }
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, arrayReferenceCountries, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-
+        spinner.setSelection(0, false);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
-                boolean isFirstTime = (spinnerID == R.id.spinnerEgypt && !(egyptInit)) ||
-                                      (spinnerID == R.id.spinnerUK && !(ukInit)) ||
-                                      (spinnerID == R.id.spinnerFrance && !(franceInit)) ||
-                                      (spinnerID == R.id.spinnerJapan && !(japanInit));
 
-                if(isFirstTime){
-                    if(spinnerID == R.id.spinnerEgypt)
-                        egyptInit = true;
-                    if(spinnerID == R.id.spinnerUK)
-                        ukInit = true;
-                    if(spinnerID == R.id.spinnerJapan)
-                        japanInit = true;
-                    if(spinnerID == R.id.spinnerFrance)
-                        franceInit = true;
+                if(position == 0)
                     return;
-                }
+
                 String ageCategory = parent.getItemAtPosition(position).toString();
                 openAgeActivity(country, ageCategory);
             }

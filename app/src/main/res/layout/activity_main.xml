@@ -32,15 +32,6 @@
         android:text="@string/choose_dest"
         />
 
-    <TextView
-        android:id="@+id/egypt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Egypt"
-        android:textSize="20sp"
-        android:background="#FF0000"
-        android:textColor="@color/black"/>
-
     <Spinner
         android:id="@+id/spinnerEgypt"
         android:layout_width="fill_parent"
@@ -49,15 +40,6 @@
         android:layout_marginBottom="20dp"
         android:background="#FFF000"
         android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/france"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="France"
-        android:textSize="20sp"
-        android:background="#FF0000"
-        android:textColor="@color/black"/>
 
     <Spinner
         android:id="@+id/spinnerFrance"
@@ -68,15 +50,6 @@
         android:background="#FFF000"
         android:layout_marginTop="20dp"/>
 
-    <TextView
-        android:id="@+id/uk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="United Kingdom of Great Britain"
-        android:textSize="20sp"
-        android:background="#FF0000"
-        android:textColor="@color/black"/>
-
     <Spinner
         android:id="@+id/spinnerUK"
         android:layout_width="fill_parent"
@@ -85,15 +58,6 @@
         android:layout_marginBottom="20dp"
         android:background="#FFF000"
         android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/japan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Japan"
-        android:textSize="20sp"
-        android:background="#FF0000"
-        android:textColor="@color/black"/>
 
     <Spinner
         android:id="@+id/spinnerJapan"
