@@ -12,6 +12,7 @@
     android:background="@drawable/vacationtime"
     tools:context=".activities.MainActivity">
 
+
     <TextView
         android:id="@+id/tv_hello"
         android:gravity="center_horizontal"
@@ -33,39 +34,39 @@
         />
 
     <Spinner
-        android:id="@+id/spinnerEgypt"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:spinnerMode="dropdown"
-        android:layout_marginBottom="20dp"
-        android:background="#FFF000"
-        android:layout_marginTop="20dp"/>
-
-    <Spinner
+        android:background="#ADD8E6"
         android:id="@+id/spinnerFrance"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:spinnerMode="dropdown"
         android:layout_marginBottom="20dp"
-        android:background="#FFF000"
         android:layout_marginTop="20dp"/>
 
     <Spinner
-        android:id="@+id/spinnerUK"
+        android:background="#ADD8E6"
+        android:id="@+id/spinnerSwitzerland"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:spinnerMode="dropdown"
         android:layout_marginBottom="20dp"
-        android:background="#FFF000"
         android:layout_marginTop="20dp"/>
 
     <Spinner
-        android:id="@+id/spinnerJapan"
+        android:background="#ADD8E6"
+        android:id="@+id/spinnerItaly"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:spinnerMode="dropdown"
         android:layout_marginBottom="20dp"
-        android:background="#FFF000"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:background="#ADD8E6"
+        android:id="@+id/spinnerAustria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"/>
 
 </LinearLayout>

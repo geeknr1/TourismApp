@@ -1,10 +1,13 @@
 package com.example.newestapp.activities;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,9 +19,22 @@ public class LogIn extends AppCompatActivity {
     private Button buttonLogIn;
     private Button buttonSignUp;
     DbHelper dbHelp;
+    VideoView backgroundLogIn;
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.log_in);
+
+        backgroundLogIn = findViewById(R.id.backgroundLogIn);
+        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.login);
+        backgroundLogIn.setVideoURI(uri);
+        backgroundLogIn.start();
+
+        backgroundLogIn.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                mediaPlayer.setLooping(true);
+            }
+        });
 
         username = findViewById(R.id.loginUser);
         password = findViewById(R.id.passwordUser);
@@ -48,5 +64,29 @@ public class LogIn extends AppCompatActivity {
         buttonSignUp.setOnClickListener(v->{
             startActivity(new Intent(LogIn.this, SignUp.class));
         });
+    }
+
+    @Override
+    protected void onPostResume(){
+        backgroundLogIn.resume();
+        super.onPostResume();
+    }
+
+    @Override
+    protected void onRestart(){
+        backgroundLogIn.start();
+        super.onRestart();
+    }
+
+    @Override
+    protected void onPause(){
+        backgroundLogIn.suspend();
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy(){
+        backgroundLogIn.stopPlayback();
+        super.onDestroy();
     }
 }

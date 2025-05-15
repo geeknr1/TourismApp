@@ -2,40 +2,40 @@
 
 <resources>
 
-    <string-array name="egypt_age_groups">
-        <item>Egypt</item>
+    <string-array name="austria">
+        <item>Austria</item>
         <item>Vacation Houses</item>
-        <item>Children (0-12)</item>
-        <item>Teens to Young Adults (13-24)</item>
-        <item>Adults (24-50)</item>
-        <item>Seniors (51-RIP)</item>
+        <item>Kitzbühel</item>
+        <item>St. Anton am Arlberg</item>
+        <item>Ischgl</item>
+        <item>Sölden</item>
     </string-array>
 
-    <string-array name="france_age_groups">
+    <string-array name="france">
         <item>France</item>
         <item>Vacation Houses</item>
-        <item>Children (0-12)</item>
-        <item>Teens to Young Adults (13-24)</item>
-        <item>Adults (24-50)</item>
-        <item>Seniors (51-RIP)</item>
+        <item>Chamonix-Mont-Blanc</item>
+        <item>Méribel</item>
+        <item>Courchevel</item>
+        <item>Val d’Isère</item>
     </string-array>
 
-    <string-array name="uk_age_groups">
-        <item>United Kingdom of Great Britain</item>
+    <string-array name="switzerland">
+        <item>Switzerland</item>
         <item>Vacation Houses</item>
-        <item>Children (0-12)</item>
-        <item>Teens to Young Adults (13-24)</item>
-        <item>Adults (24-50)</item>
-        <item>Seniors (51-RIP)</item>
+        <item>Zermatt</item>
+        <item>St. Moritz</item>
+        <item>Verbier</item>
+        <item>Grindelwald</item>
     </string-array>
 
-    <string-array name="japan_age_groups">
-        <item>Japan</item>
+    <string-array name="italy">
+        <item>Italy</item>
         <item>Vacation Houses</item>
-        <item>Children (0-12)</item>
-        <item>Teens to Young Adults (13-24)</item>
-        <item>Adults (24-50)</item>
-        <item>Seniors (51-RIP)</item>
+        <item>Cortina d`Ampezzo</item>
+        <item>Madonna di Campiglio</item>
+        <item>Selva di Val Gardena</item>
+        <item>Courmayeur</item>
     </string-array>
 
 </resources>

@@ -23,22 +23,16 @@ import com.example.newestapp.models.Country;
 
 public class MainActivity extends Activity {
 
-    private boolean egyptInit;
-    private boolean franceInit;
-    private boolean ukInit;
-    private boolean japanInit;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
-        spinnerSetup(R.id.spinnerEgypt, "Egypt");
+        spinnerSetup(R.id.spinnerSwitzerland, "Switzerland");
         spinnerSetup(R.id.spinnerFrance, "France");
-        spinnerSetup(R.id.spinnerUK, "United Kingdom of Great Britain");
-        spinnerSetup(R.id.spinnerJapan, "Japan");
+        spinnerSetup(R.id.spinnerItaly, "Italy");
+        spinnerSetup(R.id.spinnerAustria, "Austria");
 
     }
 
@@ -46,20 +40,20 @@ public class MainActivity extends Activity {
         Spinner spinner = findViewById(spinnerID);
         int arrayReferenceCountries;
         switch (country){
-            case "Egypt":
-                arrayReferenceCountries = R.array.egypt_age_groups;
-                break;
             case "France":
-                arrayReferenceCountries = R.array.france_age_groups;
+                arrayReferenceCountries = R.array.france;
                 break;
-            case "United Kingdom of Great Britain":
-                arrayReferenceCountries = R.array.japan_age_groups;
+            case "Switzerland":
+                arrayReferenceCountries = R.array.switzerland;
                 break;
-            case "Japan":
-                arrayReferenceCountries = R.array.uk_age_groups;
+            case "Austria":
+                arrayReferenceCountries = R.array.austria;
+                break;
+            case "Italy":
+                arrayReferenceCountries = R.array.italy;
                 break;
             default:
-                arrayReferenceCountries = R.array.france_age_groups;
+                arrayReferenceCountries = R.array.france;
                 break;
         }
 
@@ -70,27 +64,15 @@ public class MainActivity extends Activity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
-
                 if(position == 0)
                     return;
-
-                String ageCategory = parent.getItemAtPosition(position).toString();
-                openAgeActivity(country, ageCategory);
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
         });
 
-    }
-
-    private void openAgeActivity(String country, String ageCategory){
-        Intent intent = new Intent(this, AgeActivity.class); // da start la o noua activitate
-        intent.putExtra("country", country); // adds new info to the intent
-        intent.putExtra("ageCategory", ageCategory);
-        startActivity(intent);
     }
 }
 

@@ -22,18 +22,18 @@ public class SignUp extends AppCompatActivity {
     EditText password;
     EditText rePassword;
     Button signUp;
-    VideoView videoBackground;
+    VideoView videoBackgroundSignUp;
     private DbHelper dbHelp;
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
 
-        videoBackground = findViewById(R.id.backgroundSignUp);
+        videoBackgroundSignUp = findViewById(R.id.backgroundSignUp);
         Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.signup);
-        videoBackground.setVideoURI(uri);
-        videoBackground.start();
+        videoBackgroundSignUp.setVideoURI(uri);
+        videoBackgroundSignUp.start();
 
-        videoBackground.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        videoBackgroundSignUp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
                 mediaPlayer.setLooping(true);
@@ -64,10 +64,6 @@ public class SignUp extends AppCompatActivity {
                 return;
             }
 
-//            if(!(strPassword.equals(rePassword))){
-//                Toast.makeText(this, "Password mismatch", Toast.LENGTH_SHORT).show();
-//                return;
-//
             dbHelp = new DbHelper(this);
             boolean ok = dbHelp.addUser(strName, strSurname, strAge, strEmail, strPhoneNumber, strPassword);
 
@@ -83,25 +79,25 @@ public class SignUp extends AppCompatActivity {
 
     @Override
     protected void onPostResume(){
-        videoBackground.resume();
+        videoBackgroundSignUp.resume();
         super.onPostResume();
     }
 
     @Override
     protected void onRestart(){
-        videoBackground.start();
+        videoBackgroundSignUp.start();
         super.onRestart();
     }
 
     @Override
     protected void onPause(){
-        videoBackground.suspend();
+        videoBackgroundSignUp.suspend();
         super.onPause();
     }
 
     @Override
     protected void onDestroy(){
-        videoBackground.stopPlayback();
+        videoBackgroundSignUp.stopPlayback();
         super.onDestroy();
     }
 }

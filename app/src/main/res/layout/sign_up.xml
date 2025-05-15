@@ -39,7 +39,9 @@
         android:ems="10"
         android:id="@+id/name"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#ADD8E6"
         android:textColorHint="#000000"
+        android:layout_margin="5dp"
         android:hint="Name: "  />
 
     <EditText
@@ -48,7 +50,9 @@
         android:ems="10"
         android:id="@+id/surname"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#ADD8E6"
         android:textColorHint="#000000"
+        android:layout_margin="5dp"
         android:hint="Surname: " />
 
     <EditText
@@ -57,7 +61,9 @@
         android:id="@+id/age"
         android:ems="10"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#ADD8E6"
         android:textColorHint="#000000"
+        android:layout_margin="5dp"
         android:hint="Age: "/>
 
     <EditText
@@ -66,7 +72,9 @@
         android:ems="10"
         android:id="@+id/email"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#ADD8E6"
         android:textColorHint="#000000"
+        android:layout_margin="5dp"
         android:hint="Email: "  />
 
     <EditText
@@ -75,7 +83,9 @@
         android:ems="10"
         android:id="@+id/phoneNumber"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#ADD8E6"
         android:textColorHint="#000000"
+        android:layout_margin="5dp"
         android:hint="Phone number: " />
 
     <EditText
@@ -85,7 +95,9 @@
         android:ems="10"
         android:id="@+id/password"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#ADD8E6"
         android:textColorHint="#000000"
+        android:layout_margin="5dp"
         android:hint="Password: "  />
 
     <EditText
@@ -95,7 +107,9 @@
         android:ems="10"
         android:id="@+id/passwordRe"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#ADD8E6"
         android:textColorHint="#000000"
+        android:layout_margin="5dp"
         android:hint="Retype Password: " />
 
     <Button
