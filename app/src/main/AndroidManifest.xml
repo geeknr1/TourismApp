@@ -25,7 +25,7 @@
 
         <activity android:name=".activities.LogIn"
             android:exported="true"/>
-        <activity android:name=".activities.AgeActivity"
+        <activity android:name=".activities.PageActivity"
             android:exported="true"/>
 
 

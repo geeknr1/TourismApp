@@ -14,14 +14,34 @@
     <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationInfo">CHARMONIX_MONT_BLANC</string>
     <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
 
-    <string name="MERIBEL_skiiLocationName">CHARMONIX_MONT_BLANC skii location</string>
-    <string name="MERIBEL_skiiLocationInfo">CHARMONIX_MONT_BLANC location info</string>
-    <string name="MERIBEL_skiiLocationFunFacts">CHARMONIX_MONT_BLANC fun facts</string>
+    <string name="MERIBEL_skiiLocationName">Meribel skii location</string>
+    <string name="MERIBEL_skiiLocationInfo">Meribel location info</string>
+    <string name="MERIBEL_skiiLocationFunFacts">Meribel fun facts</string>
     <string name="MERIBEL_hikingLocationName">CHARMONIX_MONT_BLANC hiking trail</string>
     <string name="MERIBEL_hikingLocationInfo">CHARMONIX_MONT_BLANC</string>
     <string name="MERIBEL_hikingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
     <string name="MERIBEL_rockClimbingLocationName">CHARMONIX_MONT_BLANC</string>
     <string name="MERIBEL_rockClimbingLocationInfo">CHARMONIX_MONT_BLANC</string>
     <string name="MERIBEL_rockClimbingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
+
+    <string name="COURCHEVEL_skiiLocationName">CHARMONIX_MONT_BLANC skii location</string>
+    <string name="COURCHEVEL_skiiLocationInfo">CHARMONIX_MONT_BLANC location info</string>
+    <string name="COURCHEVEL_skiiLocationFunFacts">CHARMONIX_MONT_BLANC fun facts</string>
+    <string name="COURCHEVEL_hikingLocationName">CHARMONIX_MONT_BLANC hiking trail</string>
+    <string name="COURCHEVEL_hikingLocationInfo">CHARMONIX_MONT_BLANC</string>
+    <string name="COURCHEVEL_hikingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
+    <string name="COURCHEVEL_rockClimbingLocationName">CHARMONIX_MONT_BLANC</string>
+    <string name="COURCHEVEL_rockClimbingLocationInfo">CHARMONIX_MONT_BLANC</string>
+    <string name="COURCHEVEL_rockClimbingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
+
+    <string name="VAL_DLSERVE_skiiLocationName">CHARMONIX_MONT_BLANC skii location</string>
+    <string name="VAL_DLSERVE_skiiLocationInfo">CHARMONIX_MONT_BLANC location info</string>
+    <string name="VAL_DLSERVE_skiiLocationFunFacts">CHARMONIX_MONT_BLANC fun facts</string>
+    <string name="VAL_DLSERVE_hikingLocationName">CHARMONIX_MONT_BLANC hiking trail</string>
+    <string name="VAL_DLSERVE_hikingLocationInfo">CHARMONIX_MONT_BLANC</string>
+    <string name="VAL_DLSERVE_hikingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
+    <string name="VAL_DLSERVE_rockClimbingLocationName">CHARMONIX_MONT_BLANC</string>
+    <string name="VAL_DLSERVE_rockClimbingLocationInfo">CHARMONIX_MONT_BLANC</string>
+    <string name="VAL_DLSERVE_rockClimbingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
 
 </resources>

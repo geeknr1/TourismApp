@@ -6,9 +6,9 @@ import com.example.newestapp.R;
 
 public enum VacationSpotType {
     CHARMONIX_MONT_BLANC(R.string.CHARMONIX_MONT_BLANC_skiiLocationName, R.string.CHARMONIX_MONT_BLANC_skiiLocationInfo, R.string.CHARMONIX_MONT_BLANC_skiiLocationFunFacts, R.string.CHARMONIX_MONT_BLANC_hikingLocationName, R.string.CHARMONIX_MONT_BLANC_hikingLocationInfo, R.string.CHARMONIX_MONT_BLANC_hikingLocationFunFacts, R.string.CHARMONIX_MONT_BLANC_rockClimbingLocationName, R.string.CHARMONIX_MONT_BLANC_rockClimbingLocationInfo, R.string.CHARMONIX_MONT_BLANC_rockClimbingLocationFunFacts),
-    MERIBEL(R.string.MERIBEL_skiiLocationName, R.string.CHARMONIX_MONT_BLANC_skiiLocationInfo, R.string.CHARMONIX_MONT_BLANC_skiiLocationFunFacts, R.string.CHARMONIX_MONT_BLANC_hikingLocationName, R.string.CHARMONIX_MONT_BLANC_hikingLocationInfo, R.string.CHARMONIX_MONT_BLANC_hikingLocationFunFacts, R.string.CHARMONIX_MONT_BLANC_rockClimbingLocationName, R.string.CHARMONIX_MONT_BLANC_rockClimbingLocationInfo, R.string.CHARMONIX_MONT_BLANC_rockClimbingLocationFunFacts);
-//    COURCHEVEL,
-//    VAL_DLSERVE,
+    MERIBEL(R.string.MERIBEL_skiiLocationName, R.string.MERIBEL_skiiLocationInfo, R.string.MERIBEL_skiiLocationFunFacts, R.string.MERIBEL_hikingLocationName, R.string.MERIBEL_hikingLocationInfo, R.string.MERIBEL_hikingLocationFunFacts, R.string.MERIBEL_rockClimbingLocationName, R.string.MERIBEL_rockClimbingLocationInfo, R.string.MERIBEL_rockClimbingLocationFunFacts),
+    COURCHEVEL(R.string.COURCHEVEL_skiiLocationName, R.string.COURCHEVEL_skiiLocationInfo, R.string.COURCHEVEL_skiiLocationFunFacts, R.string.COURCHEVEL_hikingLocationName, R.string.COURCHEVEL_hikingLocationInfo, R.string.COURCHEVEL_hikingLocationFunFacts, R.string.COURCHEVEL_rockClimbingLocationName, R.string.COURCHEVEL_rockClimbingLocationInfo, R.string.COURCHEVEL_rockClimbingLocationFunFacts),
+    VAL_DLSERVE(R.string.VAL_DLSERVE_skiiLocationName, R.string.VAL_DLSERVE_skiiLocationInfo, R.string.VAL_DLSERVE_skiiLocationFunFacts, R.string.VAL_DLSERVE_hikingLocationName, R.string.VAL_DLSERVE_hikingLocationInfo, R.string.VAL_DLSERVE_hikingLocationFunFacts, R.string.VAL_DLSERVE_rockClimbingLocationName, R.string.VAL_DLSERVE_rockClimbingLocationInfo, R.string.VAL_DLSERVE_rockClimbingLocationFunFacts);
 //    ZERMATT,
 //    STMORITZ,
 //    VERBIER,

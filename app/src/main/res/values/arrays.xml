@@ -14,10 +14,10 @@
     <string-array name="france">
         <item>France</item>
         <item>Vacation Houses</item>
-        <item>Chamonix-Mont-Blanc</item>
-        <item>Méribel</item>
-        <item>Courchevel</item>
-        <item>Val d’Isère</item>
+        <item>CHARMONIX_MONT_BLANC</item>
+        <item>MERIBEL</item>
+        <item>COURCHEVEL</item>
+        <item>VAL_DLSERVE</item>
     </string-array>
 
     <string-array name="switzerland">

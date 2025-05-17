@@ -54,15 +54,14 @@ public class MainActivity extends Activity {
                 public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
                     if(position == 0)
                         return;
-                    String label = (String) parent.getItemAtPosition(position);
-
+                    String label = ((String) parent.getItemAtPosition(position)).trim();
+                    VacationSpotType spotType = VacationSpotType.valueOf(label);
                     try {
-                        VacationSpotType spotType = VacationSpotType.valueOf(label);
                         Intent intent = new Intent(MainActivity.this, PageActivity.class);
                         spotType.attachTo(intent);
                         startActivity(intent);
                     }catch(Exception e){
-                        Toast.makeText(MainActivity.this, "Invalid vacation spot", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, e.toString(), Toast.LENGTH_SHORT).show();
                     }
                     parent.setSelection(0);
                 }

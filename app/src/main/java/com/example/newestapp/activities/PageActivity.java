@@ -20,10 +20,7 @@ public class PageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vacation);
-        country = (Country) getIntent().getSerializableExtra("COUNTRY");
-
         VacationSpotType vacation = VacationSpotType.detachFrom(getIntent());
-
         bindText(vacation);
     }
 
