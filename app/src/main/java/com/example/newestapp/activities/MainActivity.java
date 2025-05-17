@@ -75,6 +75,3 @@ public class MainActivity extends Activity {
 
     }
 }
-
-// for avoiding crash situations we initiated  boolean values
-// using isFirstTime we initialized each value one by one, without we would initialize null values

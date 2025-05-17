@@ -19,6 +19,7 @@ public class PageActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.vacation);
         country = (Country) getIntent().getSerializableExtra("COUNTRY");
 
         VacationSpotType vacation = VacationSpotType.detachFrom(getIntent());
@@ -73,11 +74,6 @@ public class PageActivity extends AppCompatActivity {
                 break;
         }
     }
-
-    public void addVacationSpot(String vacationSpot){
-        vacationSpots.add(vacationSpot);
-    }
-
     public void bindTextVacation(String skiiLocationName, String skiiLocationInfo, String factsAboutSkiiLocation, String hikingTrailLocationName, String hikingTrailLocationInfo, String factsAboutHikingTrail, String rockClimbingLocationName, String rockClimbingLocationInfo, String factsAboutRockClimbingLocation){
         TextView funSkiiLocationName, funSkiiLocationInfo, funSkiiLocationFacts;
         funSkiiLocationName = findViewById(R.id.skiiLocationName);
