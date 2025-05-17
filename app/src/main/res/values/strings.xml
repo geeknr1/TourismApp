@@ -4,4 +4,24 @@
     <string name="hello_world">Welcome To GeoGuide!</string>
     <string name="choose_dest">Choose your destination!</string>
 
+    <string name="CHARMONIX_MONT_BLANC_skiiLocationName">CHARMONIX_MONT_BLANC skii location</string>
+    <string name="CHARMONIX_MONT_BLANC_skiiLocationInfo">CHARMONIX_MONT_BLANC location info</string>
+    <string name="CHARMONIX_MONT_BLANC_skiiLocationFunFacts">CHARMONIX_MONT_BLANC fun facts</string>
+    <string name="CHARMONIX_MONT_BLANC_hikingLocationName">CHARMONIX_MONT_BLANC hiking trail</string>
+    <string name="CHARMONIX_MONT_BLANC_hikingLocationInfo">CHARMONIX_MONT_BLANC</string>
+    <string name="CHARMONIX_MONT_BLANC_hikingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
+    <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationName">CHARMONIX_MONT_BLANC</string>
+    <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationInfo">CHARMONIX_MONT_BLANC</string>
+    <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
+
+    <string name="MERIBEL_skiiLocationName">CHARMONIX_MONT_BLANC skii location</string>
+    <string name="MERIBEL_skiiLocationInfo">CHARMONIX_MONT_BLANC location info</string>
+    <string name="MERIBEL_skiiLocationFunFacts">CHARMONIX_MONT_BLANC fun facts</string>
+    <string name="MERIBEL_hikingLocationName">CHARMONIX_MONT_BLANC hiking trail</string>
+    <string name="MERIBEL_hikingLocationInfo">CHARMONIX_MONT_BLANC</string>
+    <string name="MERIBEL_hikingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
+    <string name="MERIBEL_rockClimbingLocationName">CHARMONIX_MONT_BLANC</string>
+    <string name="MERIBEL_rockClimbingLocationInfo">CHARMONIX_MONT_BLANC</string>
+    <string name="MERIBEL_rockClimbingLocationFunFacts">CHARMONIX_MONT_BLANC</string>
+
 </resources>

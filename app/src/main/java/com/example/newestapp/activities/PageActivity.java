@@ -23,56 +23,25 @@ public class PageActivity extends AppCompatActivity {
         country = (Country) getIntent().getSerializableExtra("COUNTRY");
 
         VacationSpotType vacation = VacationSpotType.detachFrom(getIntent());
-        switch (vacation) {
-            case CHARMONIX_MONT_BLANC:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case MERIBEL:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case COURCHEVEL:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case VAL_DLSERVE:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case ZERMATT:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case STMORITZ:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case VERBIER:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case GRINDELWALD:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case CORTINA_DAMPEZZO:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case MADONNA_DI_VAL_GARDENA:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case COURMAYEUR:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case KITZBUHEL:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case ST_ANTON_AM_ARLBERG:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case ISCHGL:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            case SOLDEN:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-            default:
-                bindTextVacation("a","b","c","d","e","f","g","h", "i");
-                break;
-        }
+
+        bindText(vacation);
+    }
+
+    public void setText(int viewID, int res){
+        TextView text = findViewById(viewID);
+        text.setText(res);
+    }
+
+    public void bindText(VacationSpotType spotType){
+        setText(R.id.skiiLocationName,spotType.skiiLocationName);
+        setText(R.id.skiiLocationInfo,spotType.skiiLocationInfo);
+        setText(R.id.skiiLocationFunFacts,spotType.skiiLocationFunFacts);
+        setText(R.id.hikingLocationName,spotType.hikingLocationName);
+        setText(R.id.hikingLocationInfo,spotType.hikingLocationInfo);
+        setText(R.id.hikingLocationFunFacts,spotType.hikingLocationFunFacts);
+        setText(R.id.rockClimbingLocationName,spotType.rockClimbingLocationName);
+        setText(R.id.rockClimbingLocationInfo,spotType.rockClimbingLocationInfo);
+        setText(R.id.rockClimbingLocationFunFacts,spotType.rockClimbingLocationFunFacts);
     }
     public void bindTextVacation(String skiiLocationName, String skiiLocationInfo, String factsAboutSkiiLocation, String hikingTrailLocationName, String hikingTrailLocationInfo, String factsAboutHikingTrail, String rockClimbingLocationName, String rockClimbingLocationInfo, String factsAboutRockClimbingLocation){
         TextView funSkiiLocationName, funSkiiLocationInfo, funSkiiLocationFacts;
