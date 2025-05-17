@@ -38,4 +38,112 @@
         <item>Courmayeur</item>
     </string-array>
 
+    <string-array name="united_kingdom">
+        <item>United Kingdom of Great Britain</item>
+        <item>Vacation Houses</item>
+        <item>Cairngorms</item>
+        <item>Snowdonia</item>
+        <item>Ben Nevis (Fort William)</item>
+        <item>Lake District (Keswick, Ambleside)</item>
+    </string-array>
+
+    <string-array name="ireland">
+        <item>Ireland</item>
+        <item>Vacation Houses</item>
+        <item>MacGillycuddy’s Reeks</item>
+        <item>Wicklow Mountains (Glendalough)</item>
+        <item>The Twelve Bens (Connemara)</item>
+        <item>Mourne Mountains</item>
+    </string-array>
+
+    <string-array name="norway">
+        <item>Norway</item>
+        <item>Vacation Houses</item>
+        <item>Geilo</item>
+        <item>Hemsedal</item>
+        <item>Trysil</item>
+        <item>Røldal</item>
+    </string-array>
+
+    <string-array name="sweden">
+        <item>Sweden</item>
+        <item>Vacation Houses</item>
+        <item>Åre</item>
+        <item>Sälen</item>
+        <item>Idre Fjäll</item>
+        <item>Riksgränsen</item>
+    </string-array>
+
+    <string-array name="finland">
+        <item>Finland</item>
+        <item>Vacation Houses</item>
+        <item>Levi</item>
+        <item>Ruka</item>
+        <item>Ylläs</item>
+        <item>Pyhä-Luosto</item>
+    </string-array>
+
+    <string-array name="iceland">
+        <item>Iceland</item>
+        <item>Vacation Houses</item>
+        <item>Landmannalaugar</item>
+        <item>Þórsmörk (Thorsmork)</item>
+        <item>Kerlingarfjöll</item>
+        <item>Hvannadalshnúkur</item>
+    </string-array>
+
+    <string-array name="spain">
+        <item>Spain</item>
+        <item>Vacation Houses</item>
+        <item>Sierra Nevada (Pradollano)</item>
+        <item>Baqueira-Beret</item>
+        <item>La Molina</item>
+        <item>Formigal</item>
+    </string-array>
+
+    <string-array name="andorra">
+        <item>Andorra</item>
+        <item>Vacation Houses</item>
+        <item>Grandvalira</item>
+        <item>Vallnord – Pal Arinsal</item>
+        <item>Ordino-Arcalís</item>
+        <item>Naturland (fost Naturlandia)</item>
+    </string-array>
+
+    <string-array name="romania">
+        <item>Romania</item>
+        <item>Vacation Houses</item>
+        <item>Poiana Brașov</item>
+        <item>Sinaia</item>
+        <item>Predeal</item>
+        <item>Rânca</item>
+    </string-array>
+
+    <string-array name="bulgaria">
+        <item>Bulgaria</item>
+        <item>Vacation Houses</item>
+        <item>Bansko</item>
+        <item>Borovets</item>
+        <item>Pamporovo</item>
+        <item>Vitosha</item>
+    </string-array>
+
+    <string-array name="north_macedonia">
+        <item>North Macedonia</item>
+        <item>Vacation Houses</item>
+        <item>Mavrovo</item>
+        <item>Popova Shapka</item>
+        <item>Pelister</item>
+        <item>Krushevo</item>
+    </string-array>
+
+    <string-array name="greece">
+        <item>Greece</item>
+        <item>Vacation Houses</item>
+        <item>Parnassos</item>
+        <item>Kalavryta</item>
+        <item>Metsovo</item>
+        <item>Vasilitsa</item>
+    </string-array>
+
 </resources>

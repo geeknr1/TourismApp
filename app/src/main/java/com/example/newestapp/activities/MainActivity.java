@@ -33,6 +33,18 @@ public class MainActivity extends Activity {
         spinnerSetup(R.id.spinnerFrance, "France");
         spinnerSetup(R.id.spinnerItaly, "Italy");
         spinnerSetup(R.id.spinnerAustria, "Austria");
+        spinnerSetup(R.id.spinnerUK, "United Kingdom");
+        spinnerSetup(R.id.spinnerIreland, "Ireland");
+        spinnerSetup(R.id.spinnerNorway, "Norway");
+        spinnerSetup(R.id.spinnerSweden, "Sweden");
+        spinnerSetup(R.id.spinnerFinland, "Finland");
+        spinnerSetup(R.id.spinnerIceland, "Iceland");
+        spinnerSetup(R.id.spinnerSpain, "Spain");
+        spinnerSetup(R.id.spinnerAndorra, "Andorra");
+        spinnerSetup(R.id.spinnerRomania, "Romania");
+        spinnerSetup(R.id.spinnerBulgaria, "Bulgaria");
+        spinnerSetup(R.id.spinnerNorthMacedonia, "North Macedonia");
+        spinnerSetup(R.id.spinnerGreece, "Greece");
 
     }
 
@@ -51,6 +63,42 @@ public class MainActivity extends Activity {
                 break;
             case "Italy":
                 arrayReferenceCountries = R.array.italy;
+                break;
+            case "United Kingdom":
+                arrayReferenceCountries = R.array.united_kingdom;
+                break;
+            case "Ireland":
+                arrayReferenceCountries = R.array.ireland;
+                break;
+            case "Norway":
+                arrayReferenceCountries = R.array.norway;
+                break;
+            case "Sweden":
+                arrayReferenceCountries = R.array.sweden;
+                break;
+            case "Finland":
+                arrayReferenceCountries = R.array.finland;
+                break;
+            case "Iceland":
+                arrayReferenceCountries = R.array.iceland;
+                break;
+            case "Spain":
+                arrayReferenceCountries = R.array.spain;
+                break;
+            case "Andorra":
+                arrayReferenceCountries = R.array.andorra;
+                break;
+            case "Romania":
+                arrayReferenceCountries = R.array.romania;
+                break;
+            case "Bulgaria":
+                arrayReferenceCountries = R.array.bulgaria;
+                break;
+            case "North Macedonia":
+                arrayReferenceCountries = R.array.north_macedonia;
+                break;
+            case "Greece":
+                arrayReferenceCountries = R.array.greece;
                 break;
             default:
                 arrayReferenceCountries = R.array.france;
