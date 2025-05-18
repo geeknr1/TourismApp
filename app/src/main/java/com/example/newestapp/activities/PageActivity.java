@@ -1,8 +1,13 @@
 package com.example.newestapp.activities;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,6 +20,13 @@ import java.util.*;
 public class PageActivity extends AppCompatActivity {
     private Country country;
     private ArrayList<String> vacationSpots;
+    private Button back;
+
+    private TextView nameLocation;
+    private TextView infoLocation;
+    private TextView nameSkiiLocation;
+    private TextView infoSkiiLocation;
+    private TextView funFactsSkiiLocation;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +34,24 @@ public class PageActivity extends AppCompatActivity {
         setContentView(R.layout.vacation);
         VacationSpotType vacation = VacationSpotType.detachFrom(getIntent());
         bindText(vacation);
+        bindImg(vacation);
+
+        nameLocation = findViewById(R.id.locationName);
+        Typeface titleFont = Typeface.createFromAsset(getAssets(), "fonts/Stormfaze.otf");
+        nameLocation.setTypeface(titleFont);
+
+        infoLocation = findViewById(R.id.locationInfo);
+        Typeface infoFont = Typeface.createFromAsset(getAssets(), "fonts/whitestorm.otf");
+        infoLocation.setTypeface(infoFont);
+
+        back=findViewById(R.id.backButton);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PageActivity.this, MainActivity.class));
+            }
+        });
+
     }
 
     public void setText(int viewID, int res){
@@ -29,7 +59,14 @@ public class PageActivity extends AppCompatActivity {
         text.setText(res);
     }
 
+    public void setImage(int viewID, int res){
+        ImageView img = findViewById(viewID);
+        img.setImageResource(res);
+    }
+
     public void bindText(VacationSpotType spotType){
+        setText(R.id.locationName, spotType.locationName);
+        setText(R.id.locationInfo, spotType.locationInfo);
         setText(R.id.skiiLocationName,spotType.skiiLocationName);
         setText(R.id.skiiLocationInfo,spotType.skiiLocationInfo);
         setText(R.id.skiiLocationFunFacts,spotType.skiiLocationFunFacts);
@@ -40,33 +77,14 @@ public class PageActivity extends AppCompatActivity {
         setText(R.id.rockClimbingLocationInfo,spotType.rockClimbingLocationInfo);
         setText(R.id.rockClimbingLocationFunFacts,spotType.rockClimbingLocationFunFacts);
     }
-    public void bindTextVacation(String skiiLocationName, String skiiLocationInfo, String factsAboutSkiiLocation, String hikingTrailLocationName, String hikingTrailLocationInfo, String factsAboutHikingTrail, String rockClimbingLocationName, String rockClimbingLocationInfo, String factsAboutRockClimbingLocation){
-        TextView funSkiiLocationName, funSkiiLocationInfo, funSkiiLocationFacts;
-        funSkiiLocationName = findViewById(R.id.skiiLocationName);
-        funSkiiLocationInfo = findViewById(R.id.skiiLocationInfo);
-        funSkiiLocationFacts = findViewById(R.id.skiiLocationFunFacts);
 
-        TextView funHikingLocationName, funHikingLocationInfo, funHikingLocationFacts;
-        funHikingLocationName = findViewById(R.id.hikingLocationName);
-        funHikingLocationInfo = findViewById(R.id.hikingLocationInfo);
-        funHikingLocationFacts = findViewById(R.id.hikingLocationFunFacts);
-
-        TextView funRockClimbingLocationName, funRockClimbingLocationInfo, funRockClimbingLocationFacts;
-        funRockClimbingLocationName = findViewById(R.id.rockClimbingLocationName);
-        funRockClimbingLocationInfo = findViewById(R.id.rockClimbingLocationInfo);
-        funRockClimbingLocationFacts = findViewById(R.id.rockClimbingLocationFunFacts);
-
-        funSkiiLocationName.setText(skiiLocationName);
-        funSkiiLocationInfo.setText(skiiLocationInfo);
-        funSkiiLocationFacts.setText(factsAboutSkiiLocation);
-
-        funSkiiLocationName.setText(hikingTrailLocationName);
-        funSkiiLocationInfo.setText(hikingTrailLocationInfo);
-        funSkiiLocationFacts.setText(factsAboutHikingTrail);
-
-        funSkiiLocationName.setText(rockClimbingLocationName);
-        funSkiiLocationInfo.setText(rockClimbingLocationInfo);
-        funSkiiLocationFacts.setText(factsAboutRockClimbingLocation);
+    public void bindImg(VacationSpotType spotType){
+        setImage(R.id.generalFirstImg, spotType.imageOne);
+        setImage(R.id.generalSecondImg, spotType.imageTwo);
+        setImage(R.id.generalThirdImg, spotType.imageThree);
+        setImage(R.id.generalFourthImg, spotType.imageFour);
+        View root = findViewById(R.id.scrollRoot);
+        root.setBackgroundResource(spotType.backgroundImg);
     }
 }
 

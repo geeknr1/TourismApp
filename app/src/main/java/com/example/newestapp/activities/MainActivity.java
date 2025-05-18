@@ -18,7 +18,7 @@ import java.util.List;
 
 import com.example.newestapp.R;
 
-import com.example.newestapp.data.DataProvider;
+//import com.example.newestapp.data.DataProvider;
 import com.example.newestapp.models.Country;
 
 public class MainActivity extends Activity {

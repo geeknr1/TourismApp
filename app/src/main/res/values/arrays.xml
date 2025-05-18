@@ -6,7 +6,7 @@
         <item>Austria</item>
         <item>Vacation Houses</item>
         <item>Kitzbühel</item>
-        <item>St. Anton am Arlberg</item>
+        <item>St_Anton_am_Arlberg</item>
         <item>Ischgl</item>
         <item>Sölden</item>
     </string-array>
@@ -14,17 +14,17 @@
     <string-array name="france">
         <item>France</item>
         <item>Vacation Houses</item>
-        <item>CHARMONIX_MONT_BLANC</item>
-        <item>MERIBEL</item>
-        <item>COURCHEVEL</item>
-        <item>VAL_DLSERVE</item>
+        <item>Chamonix_Mont_Blanc</item>
+        <item>Meribel</item>
+        <item>Courchevel</item>
+        <item>Val_d`Isère</item>
     </string-array>
 
     <string-array name="switzerland">
         <item>Switzerland</item>
         <item>Vacation Houses</item>
         <item>Zermatt</item>
-        <item>St. Moritz</item>
+        <item>St_Moritz</item>
         <item>Verbier</item>
         <item>Grindelwald</item>
     </string-array>
@@ -32,8 +32,8 @@
     <string-array name="italy">
         <item>Italy</item>
         <item>Vacation Houses</item>
-        <item>Cortina d`Ampezzo</item>
-        <item>Madonna di Campiglio</item>
+        <item>Cortina_dAmpezzo</item>
+        <item>MadonnadiCampiglio</item>
         <item>Selva di Val Gardena</item>
         <item>Courmayeur</item>
     </string-array>

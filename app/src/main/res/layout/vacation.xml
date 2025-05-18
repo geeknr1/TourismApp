@@ -1,85 +1,150 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollRoot">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/locationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/locationInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+        android:id="@+id/generalFirstImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+                android:paddingEnd="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/generalSecondImg"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/generalThirdImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingEnd="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/generalFourthImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/skiiLocationName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Skii location name"
         android:textSize="25sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/skiiLocationInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Information about the skii location"
         android:textSize="15sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/skiiLocationFunFacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fun facts."
         android:textSize="15sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/hikingLocationName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hiking location name"
         android:textSize="25sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/hikingLocationInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Information about the hiking location"
         android:textSize="15sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/hikingLocationFunFacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fun facts."
         android:textSize="15sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/rockClimbingLocationName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rock climbing location name"
         android:textSize="25sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/rockClimbingLocationInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Information about the rock climbing location"
         android:textSize="15sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/rockClimbingLocationFunFacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fun facts."
         android:textSize="15sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Main Menu"/>
+
+    </LinearLayout>
+
+</ScrollView>
