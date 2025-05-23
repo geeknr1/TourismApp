@@ -67,6 +67,23 @@ public class PageActivity extends AppCompatActivity {
         seniors.setVisibility(View.VISIBLE);
         backToNormal.setVisibility(View.VISIBLE);
 
+        String backup = infoLocation.getText().toString();
+
+        ageGroups.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if(children.isChecked()){
+                    infoSkiiLocation = findViewById(R.id.skiiLocationInfo);
+                    String temp = infoSkiiLocation.getText().toString();
+                    infoLocation.setText(temp);
+                }
+                if(backToNormal.isChecked()){
+                    String temp = backup;
+                    infoLocation.setText(temp);
+                }
+            }
+        });
+
         back=findViewById(R.id.backButton);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
