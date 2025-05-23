@@ -4,8 +4,10 @@
     <string name="hello_world">Welcome To GeoGuide!</string>
     <string name="choose_dest">Choose your destination!</string>
 
-    <string name="CHARMONIX_MONT_BLANC_locationName">Chamonix-Mont-Blanc location name</string>
-    <string name="CHARMONIX_MONT_BLANC_locationInfo">Chamonix-Mont-Blanc location info</string>
+    <string name="CHARMONIX_MONT_BLANC_locationName">Chamonix-Mont-Blanc</string>
+    <string name="CHARMONIX_MONT_BLANC_locationInfo">Chamonix-Mont-Blanc is a commune in the Haute-Savoie department in the Auvergne-Rhône-Alpes region in Southeastern France. It was the site of the first Winter Olympics, held in 1924.
+
+Chamonix is situated in the French Alps just north of Mont Blanc, the highest mountain in Western Europe. Between the peaks of the Aiguilles Rouges and the notable Aiguille du Midi, it borders both Switzerland and Italy. It is one of the oldest ski resorts in France, popular with alpinists and mountain enthusiasts. Via the cable car lift to the Aiguille du Midi it is possible to access the off-piste ski run of the Vallée Blanche (White Valley).</string>
     <string name="CHARMONIX_MONT_BLANC_skiiLocationName">Chamonix-Mont-Blanc skii location</string>
     <string name="CHARMONIX_MONT_BLANC_skiiLocationInfo">Chamonix-Mont-Blanc location info</string>
     <string name="CHARMONIX_MONT_BLANC_skiiLocationFunFacts">Chamonix-Mont-Blanc fun facts</string>
@@ -16,8 +18,8 @@
     <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationInfo">Chamonix-Mont-Blanc</string>
     <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationFunFacts">Chamonix-Mont-Blanc</string>
 
-    <string name="MERIBEL_locationName">Meribel name</string>
-    <string name="MERIBEL_locationInfo">Meribel info</string>
+    <string name="MERIBEL_locationName">Meribel</string>
+    <string name="MERIBEL_locationInfo">Méribel is a ski resort in the Tarentaise Valley in the French Alps. Méribel refers to three neighbouring villages in the Les Allues commune of the Savoie department of France, near the town of Moûtiers (45.401°N 6.5655°E), called Méribel Centre, Méribel-Mottaret and Méribel Village. The villages are within Vanoise National Park and a part of the Les Trois Vallées interlinked ski system.</string>
     <string name="MERIBEL_skiiLocationName">Meribel skii location</string>
     <string name="MERIBEL_skiiLocationInfo">Meribel location info</string>
     <string name="MERIBEL_skiiLocationFunFacts">Meribel fun facts</string>
@@ -28,8 +30,12 @@
     <string name="MERIBEL_rockClimbingLocationInfo">Meribel</string>
     <string name="MERIBEL_rockClimbingLocationFunFacts">Meribel</string>
 
-    <string name="COURCHEVEL_locationName">Courchevel name</string>
-    <string name="COURCHEVEL_locationInfo">Courchevel info</string>
+    <string name="COURCHEVEL_locationName">Courchevel</string>
+    <string name="COURCHEVEL_locationInfo">Courchevel is a French Alps ski resort located in the Tarentaise Valley. It is a part of Les Trois Vallées, the largest linked ski areas in the world.
+
+Courchevel also refers to the towns of Courchevel 1300 (Le Praz), Courchevel 1550, Courchevel 1650 (Moriond), and Courchevel 1850, which are named for their altitudes in metres. The resort centre of Courchevel is at 1,747 metres (5,732 ft).
+
+Sports events from the 1992 Winter Olympics and the 2023 World Ski Championships took place in Courchevel. The ski resort is considered exclusive, attracting wealthy clientele including royal families. It hosts one of the largest concentrations of 5-star ranking luxury hotels.</string>
     <string name="COURCHEVEL_skiiLocationName">Courchevel skii location</string>
     <string name="COURCHEVEL_skiiLocationInfo">Courchevel location info</string>
     <string name="COURCHEVEL_skiiLocationFunFacts">Courchevel fun facts</string>
@@ -40,8 +46,10 @@
     <string name="COURCHEVEL_rockClimbingLocationInfo">Courchevel</string>
     <string name="COURCHEVEL_rockClimbingLocationFunFacts">Courchevel</string>
 
-    <string name="VAL_DLSERVE_locationName">Val-d`Isère name</string>
-    <string name="VAL_DLSERVE_locationInfo">Val-d`Isère info</string>
+    <string name="VAL_DLSERVE_locationName">Val-d\`Isère</string>
+    <string name="VAL_DLSERVE_locationInfo">Val-d\`Isère is a commune of the Tarentaise Valley, in the Savoie department (Auvergne-Rhône-Alpes region) in southeastern France. It lies 5 km (3 mi) from the border with Italy. It is on the border of the Vanoise National Park created in 1963, with good transport links in and out of Lyon, Geneva and Chambéry.
+
+During the Albertville 1992 Winter Olympics, the Face de Bellevarde was the site of the men\`s downhill race. Other alpine skiing events held during those games included men\`s giant slalom and alpine combined. Val d\`Isère regularly hosts World Cup alpine events, usually for the men in early December, and hosted the World Championships in 2009. The ski area of Val d\'Isère and Tignes forms the Espace Killy, named after the triple Olympic champion Jean-Claude Killy who grew up in Val d\'Isère. There are two mountain huts (called “refuges” in French) owned by the Vanoise National Park on the territory of Val d\'Isère: le Refuge du Prariond and le Refuge du Fond des Fours.</string>
     <string name="VAL_DLSERVE_skiiLocationName">Val-d`Isère skii location</string>
     <string name="VAL_DLSERVE_skiiLocationInfo">Val-d`Isère location info</string>
     <string name="VAL_DLSERVE_skiiLocationFunFacts">Val-d`Isère fun facts</string>
@@ -52,8 +60,12 @@
     <string name="VAL_DLSERVE_rockClimbingLocationInfo">Val-d`Isère</string>
     <string name="VAL_DLSERVE_rockClimbingLocationFunFacts">Val-d`Isère</string>
 
-    <string name="ZERMATT_locationName">Zermatt name</string>
-    <string name="ZERMATT_locationInfo">Zermatt info</string>
+    <string name="ZERMATT_locationName">Zermatt</string>
+    <string name="ZERMATT_locationInfo">Zermatt is a municipality in the district of Visp in the German-speaking section of the canton of Valais in Switzerland. It has a year-round population of about 5,800 and is classified as a town by the Swiss Federal Statistical Office (FSO).
+
+It lies at the upper end of Mattertal at an elevation of 1,620 m, at the foot of Switzerland\'s highest peaks. It lies about 10 km (6.2 mi) from the over 3,292 m (10,801 ft) high Theodul Pass bordering Italy. Zermatt is the southernmost commune of the German Sprachraum.
+
+Zermatt is famed as a mountaineering and ski resort of the Swiss Alps. Until the mid-19th century, it was predominantly an agricultural community; the first and tragic ascent of the Matterhorn in 1865 was followed by a rush on the mountains surrounding the village, leading to the construction of many tourist facilities. The year-round population (as of December 2020) is 5,820, though there may be several times as many tourists in Zermatt at any one time. Much of the local economy is based on tourism, with about half of the jobs in town in hotels or restaurants and just under half of all apartments are vacation apartments. Just over one-third of the permanent population was born in the town, while another third moved to Zermatt from outside Switzerland.</string>
     <string name="ZERMATT_skiiLocationName">Zermatt skii location</string>
     <string name="ZERMATT_skiiLocationInfo">Zermatt location info</string>
     <string name="ZERMATT_skiiLocationFunFacts">Zermatt fun facts</string>
@@ -64,8 +76,10 @@
     <string name="ZERMATT_rockClimbingLocationInfo">Zermatt</string>
     <string name="ZERMATT_rockClimbingLocationFunFacts">Zermatt</string>
 
-    <string name="STMORITZ_locationName">St. Moritz name</string>
-    <string name="STMORITZ_locationInfo">St. Moritz info</string>
+    <string name="STMORITZ_locationName">St. Moritz</string>
+    <string name="STMORITZ_locationInfo">St. Moritz is a high Alpine resort town in the Engadine in Switzerland, at an elevation of about 1,800 metres (5,910 ft) above sea level. It is Upper Engadine\'s major town and a municipality in the administrative region of Maloja in the Swiss canton of the Grisons.
+
+St. Moritz lies on the southern slopes of the Albula Alps below the Piz Nair (3,056 m ) overlooking the flat and wide glaciated valley of the Upper Engadine and eponymous lake: Lake St. Moritz. It hosted the Winter Olympics in 1928 and 1948.</string>
     <string name="STMORITZ_skiiLocationName">St. Moritz skii location</string>
     <string name="STMORITZ_skiiLocationInfo">St. Moritz location info</string>
     <string name="STMORITZ_skiiLocationFunFacts">St. Moritz fun facts</string>
@@ -76,8 +90,8 @@
     <string name="STMORITZ_rockClimbingLocationInfo">St. Moritz</string>
     <string name="STMORITZ_rockClimbingLocationFunFacts">St. Moritz</string>
 
-    <string name="VERBIER_locationName">Verbier name</string>
-    <string name="VERBIER_locationInfo">Verbier info</string>
+    <string name="VERBIER_locationName">Verbier</string>
+    <string name="VERBIER_locationInfo">Verbier is a village located in south-western Switzerland in the canton of Valais. It is a holiday resort and ski area in the Swiss Alps and is recognised as one of the premier off-piste resorts in the world. Some areas are covered with snow all year. Skiers have settled in the Verbier area in order to take advantage of the steep slopes, varied conditions, and resort culture.</string>
     <string name="VERBIER_skiiLocationName">Verbier skii location</string>
     <string name="VERBIER_skiiLocationInfo">Verbier location info</string>
     <string name="VERBIER_skiiLocationFunFacts">Verbier fun facts</string>
@@ -88,8 +102,12 @@
     <string name="VERBIER_rockClimbingLocationInfo">Verbier</string>
     <string name="VERBIER_rockClimbingLocationFunFacts">Verbier</string>
 
-    <string name="GRINDELWALD_locationName">Grindelwald name</string>
-    <string name="GRINDELWALD_locationInfo">Grindelwald info</string>
+    <string name="GRINDELWALD_locationName">Grindelwald</string>
+    <string name="GRINDELWALD_locationInfo">Grindelwald is a village and municipality in the Interlaken-Oberhasli administrative district in the canton of Berne. In addition to the village of Grindelwald, the municipality also includes the settlements of Alpiglen, Burglauenen, Grund, Itramen, Mühlebach, Schwendi, Tschingelberg and Wargistal.
+
+Grindelwald village is 1,034 m above sea level. Mentioned for the first time in 1146, it has become an important tourist destination of both Switzerland and the Alps since the golden age of alpinism in the 19th century. It is overlooked by a section of the Bernese Alps from the Wetterhorn to the Eiger, which creates a natural barrier. Together with the adjacent valley of Lauterbrunnen, the valley of Grindelwald forms part of the Jungfrau Region of the Bernese Oberland, between Interlaken and the main crest of the Bernese Alps.
+
+Similarly to Lauterbrunnen, Grindelwald is connected to Interlaken by the Bernese Oberland Railway and is the start of the Wengernalp Railway, leading to Kleine Scheidegg. The latter resort is the start of the Jungfrau Railway, the highest railway in Europe and a gateway to the Jungfrau-Aletsch protected area.</string>
     <string name="GRINDELWALD_skiiLocationName">Grindelwald skii location</string>
     <string name="GRINDELWALD_skiiLocationInfo">Grindelwald location info</string>
     <string name="GRINDELWALD_skiiLocationFunFacts">Grindelwald fun facts</string>
@@ -100,20 +118,24 @@
     <string name="GRINDELWALD_rockClimbingLocationInfo">Grindelwald</string>
     <string name="GRINDELWALD_rockClimbingLocationFunFacts">Grindelwald</string>
 
-    <string name="CORTINA_DAMPEZZO_locationName">Cortina d`Ampezzo name</string>
-    <string name="CORTINA_DAMPEZZO_locationInfo">Cortina d`Ampezzo info</string>
-    <string name="CORTINA_DAMPEZZO_skiiLocationName">Cortina d`Ampezzo skii location</string>
-    <string name="CORTINA_DAMPEZZO_skiiLocationInfo">Cortina d`Ampezzo location info</string>
-    <string name="CORTINA_DAMPEZZO_skiiLocationFunFacts">Cortina d`Ampezzo fun facts</string>
-    <string name="CORTINA_DAMPEZZO_hikingLocationName">Cortina d`Ampezzo hiking trail</string>
-    <string name="CORTINA_DAMPEZZO_hikingLocationInfo">Cortina d`Ampezzo</string>
-    <string name="CORTINA_DAMPEZZO_hikingLocationFunFacts">Cortina d`Ampezzo</string>
-    <string name="CORTINA_DAMPEZZO_rockClimbingLocationName">Cortina d`Ampezzo</string>
-    <string name="CORTINA_DAMPEZZO_rockClimbingLocationInfo">Cortina d`Ampezzo</string>
-    <string name="CORTINA_DAMPEZZO_rockClimbingLocationFunFacts">Cortina d`Ampezzo</string>
+    <string name="CORTINA_DAMPEZZO_locationName">Cortina d\'Ampezzo</string>
+    <string name="CORTINA_DAMPEZZO_locationInfo">Cortina d\'Ampezzo is a town and comune in the heart of the southern (Dolomitic) Alps in the province of Belluno, in the Veneto region of Northern Italy. Situated on the Boite river, in an alpine valley, it is an upscale summer and winter sport resort known for its skiing trails, scenery, accommodation, shops and après-ski scene, and for its jet set and Italian aristocratic crowd.</string>
+    <string name="CORTINA_DAMPEZZO_skiiLocationName">Cortina d\'Ampezzo skii location</string>
+    <string name="CORTINA_DAMPEZZO_skiiLocationInfo">Cortina d\'Ampezzo location info</string>
+    <string name="CORTINA_DAMPEZZO_skiiLocationFunFacts">Cortina d\'Ampezzo fun facts</string>
+    <string name="CORTINA_DAMPEZZO_hikingLocationName">Cortina d\'Ampezzo hiking trail</string>
+    <string name="CORTINA_DAMPEZZO_hikingLocationInfo">Cortina d\'Ampezzo</string>
+    <string name="CORTINA_DAMPEZZO_hikingLocationFunFacts">Cortina d\'Ampezzo</string>
+    <string name="CORTINA_DAMPEZZO_rockClimbingLocationName">Cortina d\'Ampezzo</string>
+    <string name="CORTINA_DAMPEZZO_rockClimbingLocationInfo">Cortina d\'Ampezzo</string>
+    <string name="CORTINA_DAMPEZZO_rockClimbingLocationFunFacts">Cortina d\'Ampezzo</string>
 
     <string name="MADONNA_DI_VAL_GARDENA_locationName">Madonna di Campiglio</string>
-    <string name="MADONNA_DI_VAL_GARDENA_locationInfo">Madonna di Campiglio</string>
+    <string name="MADONNA_DI_VAL_GARDENA_locationInfo">Madonna di Campiglio is a village and a ski resort in northeast Italy. It is a frazione of the comune of Pinzolo. The village lies in the Val Rendena at an elevation of 1,522 m above sea level, and has approximately 1,000 inhabitants.
+
+The ski area around Madonna di Campiglio has 57 lifts and 150 km of ski runs, with a capacity of more than 31,000 people per hour, rises to 2,600 m (8,530 ft), has 50,000 m2 (12 acres) of snow park, 40 km for Nordic skiing and links to the pistes in Pinzolo, Folgarida, and Marilleva.
+
+Madonna di Campiglio is the main point of access to the Brenta Dolomites, with its famous via ferrata, with the ski lift to the Passo Groste taking one directly to the northern end of the via ferrata network.</string>
     <string name="MADONNA_DI_VAL_GARDENA_skiiLocationName">Madonna di Campiglio</string>
     <string name="MADONNA_DI_VAL_GARDENA_skiiLocationInfo">Madonna di Campiglio</string>
     <string name="MADONNA_DI_VAL_GARDENA_skiiLocationFunFacts">Madonna di Campiglio</string>
@@ -125,7 +147,7 @@
     <string name="MADONNA_DI_VAL_GARDENA_rockClimbingLocationFunFacts">Madonna di Campiglio</string>
 
     <string name="COURMAYEUR_locationName">Courmayeur</string>
-    <string name="COURMAYEUR_locationInfo">Courmayeur</string>
+    <string name="COURMAYEUR_locationInfo">Courmayeur is a town and comune in northern Italy, in the autonomous region of Aosta Valley.</string>
     <string name="COURMAYEUR_skiiLocationName">Courmayeur</string>
     <string name="COURMAYEUR_skiiLocationInfo">Courmayeur</string>
     <string name="COURMAYEUR_skiiLocationFunFacts">Courmayeur</string>

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +23,13 @@ public class PageActivity extends AppCompatActivity {
     private Country country;
     private ArrayList<String> vacationSpots;
     private Button back;
+
+    private RadioGroup ageGroups;
+    private RadioButton children;
+    private RadioButton youngOnes;
+    private RadioButton adults;
+    private RadioButton seniors;
+    private RadioButton backToNormal;
 
     private TextView nameLocation;
     private TextView infoLocation;
@@ -43,6 +52,20 @@ public class PageActivity extends AppCompatActivity {
         infoLocation = findViewById(R.id.locationInfo);
         Typeface infoFont = Typeface.createFromAsset(getAssets(), "fonts/whitestorm.otf");
         infoLocation.setTypeface(infoFont);
+
+        ageGroups = findViewById(R.id.radioAgeGroups);
+        children = findViewById(R.id.child);
+        youngOnes = findViewById(R.id.youngPeople);
+        adults = findViewById(R.id.adult);
+        seniors = findViewById(R.id.senior);
+        backToNormal = findViewById(R.id.normal);
+
+        ageGroups.setVisibility(View.VISIBLE);
+        children.setVisibility(View.VISIBLE);
+        youngOnes.setVisibility(View.VISIBLE);
+        adults.setVisibility(View.VISIBLE);
+        seniors.setVisibility(View.VISIBLE);
+        backToNormal.setVisibility(View.VISIBLE);
 
         back=findViewById(R.id.backButton);
         back.setOnClickListener(new View.OnClickListener() {

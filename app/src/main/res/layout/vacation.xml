@@ -139,6 +139,76 @@
         android:textSize="15sp"
         android:textColor="@color/white"/>
 
+        <RadioGroup
+            android:id="@+id/radioAgeGroups"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RadioButton
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:text="Children (0-12)"
+                android:id="@+id/child"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:checked="false"
+                android:layout_gravity="center_horizontal"
+                android:background="#00008B"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teenagers/Young Adults (13-27)"
+                android:id="@+id/youngPeople"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:background="#00008B"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="Adults (28-50)"
+                android:id="@+id/adult"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:background="#00008B"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seniors (50-RIP)"
+                android:id="@+id/senior"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:background="#00008B"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back to normal"
+                android:id="@+id/normal"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:background="#00008B"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"/>
+
+        </RadioGroup>
+
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
