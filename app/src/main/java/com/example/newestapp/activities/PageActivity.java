@@ -45,6 +45,22 @@ public class PageActivity extends AppCompatActivity {
     private TextView funFactsSkiiLocation;
     private TextView funFactsHikingLocation;
     private TextView funFactsRockClimbingLocation;
+    private ImageView generalImgOne;
+    private ImageView generalImgTwo;
+    private ImageView generalImgThree;
+    private ImageView generalImgFour;
+    private ImageView skiImgOne;
+    private ImageView skiImgTwo;
+    private ImageView skiImgThree;
+    private ImageView skiImgFour;
+    private ImageView hikingImgOne;
+    private ImageView hikingImgTwo;
+    private ImageView hikingImgThree;
+    private ImageView hikingImgFour;
+    private ImageView rockClimbingImgOne;
+    private ImageView rockClimbingImgTwo;
+    private ImageView rockClimbingImgThree;
+    private ImageView rockClimbingImgFour;
 
     private VideoView hikingVid;
     //private String videoURL = "res/raw/charmonixhiking.mp4";
@@ -102,6 +118,26 @@ public class PageActivity extends AppCompatActivity {
         Typeface titleFunFactsRockClimbingFont = Typeface.createFromAsset(getAssets(), "fonts/whitestorm.otf");
         funFactsRockClimbingLocation.setTypeface(titleFunFactsRockClimbingFont);
 
+        generalImgOne = findViewById(R.id.generalFirstImg);
+        generalImgTwo = findViewById(R.id.generalSecondImg);
+        generalImgThree = findViewById(R.id.generalThirdImg);
+        generalImgFour = findViewById(R.id.generalFourthImg);
+
+        skiImgOne = findViewById(R.id.generalSkiFirstImg);
+        skiImgTwo = findViewById(R.id.generalSkiSecondImg);
+        skiImgThree = findViewById(R.id.generalSkiThirdImg);
+        skiImgFour = findViewById(R.id.generalSkiFourthImg);
+
+        hikingImgOne = findViewById(R.id.generalHikingFirstImg);
+        hikingImgTwo = findViewById(R.id.generalHikingSecondImg);
+        hikingImgThree = findViewById(R.id.generalHikingThirdImg);
+        hikingImgFour = findViewById(R.id.generalHikingFourthImg);
+
+        rockClimbingImgOne = findViewById(R.id.generalRockClimbingFirstImg);
+        rockClimbingImgTwo = findViewById(R.id.generalRockClimbingSecondImg);
+        rockClimbingImgThree = findViewById(R.id.generalRockClimbingThirdImg);
+        rockClimbingImgFour = findViewById(R.id.generalRockClimbingFourthImg);
+
         hikingVid = findViewById(R.id.hikingVideoID);
 
         nameSkiiLocation.setVisibility(View.GONE);
@@ -128,8 +164,26 @@ public class PageActivity extends AppCompatActivity {
         seniors.setVisibility(View.VISIBLE);
         backToNormal.setVisibility(View.VISIBLE);
 
+        generalImgOne.setVisibility(View.VISIBLE);
+        generalImgTwo.setVisibility(View.VISIBLE);
+        generalImgThree.setVisibility(View.VISIBLE);
+        generalImgFour.setVisibility(View.VISIBLE);
+        skiImgOne.setVisibility(View.GONE);
+        skiImgTwo.setVisibility(View.GONE);
+        skiImgThree.setVisibility(View.GONE);
+        skiImgFour.setVisibility(View.GONE);
+        hikingImgOne.setVisibility(View.GONE);
+        hikingImgTwo.setVisibility(View.GONE);
+        hikingImgThree.setVisibility(View.GONE);
+        hikingImgFour.setVisibility(View.GONE);
+        rockClimbingImgOne.setVisibility(View.GONE);
+        rockClimbingImgTwo.setVisibility(View.GONE);
+        rockClimbingImgThree.setVisibility(View.GONE);
+        rockClimbingImgFour.setVisibility(View.GONE);
+
         String backupone = nameLocation.getText().toString();
         String backuptwo = infoLocation.getText().toString();
+        funFactsRockClimbingLocation.setVisibility(View.GONE);
 
         MediaController mediaController = new MediaController(this);
 
@@ -145,6 +199,23 @@ public class PageActivity extends AppCompatActivity {
 
                     funFactsRockClimbingLocation.setVisibility(View.GONE);
                     hikingVid.setVisibility(View.GONE);
+
+                    generalImgOne.setVisibility(View.GONE);
+                    generalImgTwo.setVisibility(View.GONE);
+                    generalImgThree.setVisibility(View.GONE);
+                    generalImgFour.setVisibility(View.GONE);
+                    skiImgOne.setVisibility(View.VISIBLE);
+                    skiImgTwo.setVisibility(View.VISIBLE);
+                    skiImgThree.setVisibility(View.VISIBLE);
+                    skiImgFour.setVisibility(View.VISIBLE);
+                    hikingImgOne.setVisibility(View.GONE);
+                    hikingImgTwo.setVisibility(View.GONE);
+                    hikingImgThree.setVisibility(View.GONE);
+                    hikingImgFour.setVisibility(View.GONE);
+                    rockClimbingImgOne.setVisibility(View.GONE);
+                    rockClimbingImgTwo.setVisibility(View.GONE);
+                    rockClimbingImgThree.setVisibility(View.GONE);
+                    rockClimbingImgFour.setVisibility(View.GONE);
                 }
                 if(youngOnes.isChecked()){
                     String tempone = nameHikingLocation.getText().toString();
@@ -162,6 +233,23 @@ public class PageActivity extends AppCompatActivity {
                     hikingVid.start();
 
                     funFactsRockClimbingLocation.setVisibility(View.GONE);
+
+                    generalImgOne.setVisibility(View.GONE);
+                    generalImgTwo.setVisibility(View.GONE);
+                    generalImgThree.setVisibility(View.GONE);
+                    generalImgFour.setVisibility(View.GONE);
+                    skiImgOne.setVisibility(View.GONE);
+                    skiImgTwo.setVisibility(View.GONE);
+                    skiImgThree.setVisibility(View.GONE);
+                    skiImgFour.setVisibility(View.GONE);
+                    hikingImgOne.setVisibility(View.VISIBLE);
+                    hikingImgTwo.setVisibility(View.VISIBLE);
+                    hikingImgThree.setVisibility(View.VISIBLE);
+                    hikingImgFour.setVisibility(View.VISIBLE);
+                    rockClimbingImgOne.setVisibility(View.GONE);
+                    rockClimbingImgTwo.setVisibility(View.GONE);
+                    rockClimbingImgThree.setVisibility(View.GONE);
+                    rockClimbingImgFour.setVisibility(View.GONE);
                 }
                 if(adults.isChecked()){
                     String tempone = nameRockClimbingLocation.getText().toString();
@@ -172,6 +260,23 @@ public class PageActivity extends AppCompatActivity {
 
                     funFactsRockClimbingLocation.setVisibility(View.GONE);
                     hikingVid.setVisibility(View.GONE);
+
+                    generalImgOne.setVisibility(View.GONE);
+                    generalImgTwo.setVisibility(View.GONE);
+                    generalImgThree.setVisibility(View.GONE);
+                    generalImgFour.setVisibility(View.GONE);
+                    skiImgOne.setVisibility(View.GONE);
+                    skiImgTwo.setVisibility(View.GONE);
+                    skiImgThree.setVisibility(View.GONE);
+                    skiImgFour.setVisibility(View.GONE);
+                    hikingImgOne.setVisibility(View.GONE);
+                    hikingImgTwo.setVisibility(View.GONE);
+                    hikingImgThree.setVisibility(View.GONE);
+                    hikingImgFour.setVisibility(View.GONE);
+                    rockClimbingImgOne.setVisibility(View.VISIBLE);
+                    rockClimbingImgTwo.setVisibility(View.VISIBLE);
+                    rockClimbingImgThree.setVisibility(View.VISIBLE);
+                    rockClimbingImgFour.setVisibility(View.VISIBLE);
                 }
                 if(seniors.isChecked()){
                     String tempone = funFactsSkiiLocation.getText().toString();
@@ -182,6 +287,23 @@ public class PageActivity extends AppCompatActivity {
 
                     funFactsRockClimbingLocation.setVisibility(View.VISIBLE);
                     hikingVid.setVisibility(View.GONE);
+
+                    generalImgOne.setVisibility(View.GONE);
+                    generalImgTwo.setVisibility(View.GONE);
+                    generalImgThree.setVisibility(View.GONE);
+                    generalImgFour.setVisibility(View.GONE);
+                    skiImgOne.setVisibility(View.VISIBLE);
+                    skiImgTwo.setVisibility(View.VISIBLE);
+                    skiImgThree.setVisibility(View.GONE);
+                    skiImgFour.setVisibility(View.GONE);
+                    hikingImgOne.setVisibility(View.GONE);
+                    hikingImgTwo.setVisibility(View.GONE);
+                    hikingImgThree.setVisibility(View.GONE);
+                    hikingImgFour.setVisibility(View.GONE);
+                    rockClimbingImgOne.setVisibility(View.GONE);
+                    rockClimbingImgTwo.setVisibility(View.GONE);
+                    rockClimbingImgThree.setVisibility(View.VISIBLE);
+                    rockClimbingImgFour.setVisibility(View.VISIBLE);
                 }
                 if(backToNormal.isChecked()){
                     String tempone = backupone;
@@ -190,17 +312,24 @@ public class PageActivity extends AppCompatActivity {
                     String temptwo = backuptwo;
                     infoLocation.setText(temptwo);
 
-                    nameSkiiLocation.setVisibility(View.GONE);
-                    infoSkiiLocation.setVisibility(View.GONE);
-                    nameHikingLocation.setVisibility(View.GONE);
-                    infoHikingLocation.setVisibility(View.GONE);
-                    nameRockClimbingLocation.setVisibility(View.GONE);
-                    infoRockClimbingLocation.setVisibility(View.GONE);
-                    funFactsSkiiLocation.setVisibility(View.GONE);
-                    funFactsHikingLocation.setVisibility(View.GONE);
+                    generalImgOne.setVisibility(View.VISIBLE);
+                    generalImgTwo.setVisibility(View.VISIBLE);
+                    generalImgThree.setVisibility(View.VISIBLE);
+                    generalImgFour.setVisibility(View.VISIBLE);
+                    skiImgOne.setVisibility(View.GONE);
+                    skiImgTwo.setVisibility(View.GONE);
+                    skiImgThree.setVisibility(View.GONE);
+                    skiImgFour.setVisibility(View.GONE);
+                    hikingImgOne.setVisibility(View.GONE);
+                    hikingImgTwo.setVisibility(View.GONE);
+                    hikingImgThree.setVisibility(View.GONE);
+                    hikingImgFour.setVisibility(View.GONE);
+                    rockClimbingImgOne.setVisibility(View.GONE);
+                    rockClimbingImgTwo.setVisibility(View.GONE);
+                    rockClimbingImgThree.setVisibility(View.GONE);
+                    rockClimbingImgFour.setVisibility(View.GONE);
+
                     funFactsRockClimbingLocation.setVisibility(View.GONE);
-                    hikingVid.setVisibility(View.GONE);
-                    back.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -252,6 +381,18 @@ public class PageActivity extends AppCompatActivity {
         setImage(R.id.generalFourthImg, spotType.imageFour);
         View root = findViewById(R.id.scrollRoot);
         root.setBackgroundResource(spotType.backgroundImg);
+        setImage(R.id.generalSkiFirstImg, spotType.skiImgOne);
+        setImage(R.id.generalSkiSecondImg, spotType.skiImgTwo);
+        setImage(R.id.generalSkiThirdImg, spotType.skiImgThree);
+        setImage(R.id.generalSkiFourthImg, spotType.skiImgFour);
+        setImage(R.id.generalHikingFirstImg, spotType.hikingImgOne);
+        setImage(R.id.generalHikingSecondImg, spotType.hikingImgTwo);
+        setImage(R.id.generalHikingThirdImg, spotType.hikingImgThree);
+        setImage(R.id.generalHikingFourthImg, spotType.hikingImgFour);
+        setImage(R.id.generalRockClimbingFirstImg, spotType.rockClimbingImgOne);
+        setImage(R.id.generalRockClimbingSecondImg, spotType.rockClimbingImgTwo);
+        setImage(R.id.generalRockClimbingThirdImg, spotType.rockClimbingImgThree);
+        setImage(R.id.generalRockClimbingFourthImg, spotType.rockClimbingImgFour);
     }
 
     public void bindVid(VacationSpotType spotType){
