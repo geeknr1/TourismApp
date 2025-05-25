@@ -8,27 +8,27 @@
     <string name="CHARMONIX_MONT_BLANC_locationInfo">Chamonix-Mont-Blanc is a commune in the Haute-Savoie department in the Auvergne-Rhône-Alpes region in Southeastern France. It was the site of the first Winter Olympics, held in 1924.
 
 Chamonix is situated in the French Alps just north of Mont Blanc, the highest mountain in Western Europe. Between the peaks of the Aiguilles Rouges and the notable Aiguille du Midi, it borders both Switzerland and Italy. It is one of the oldest ski resorts in France, popular with alpinists and mountain enthusiasts. Via the cable car lift to the Aiguille du Midi it is possible to access the off-piste ski run of the Vallée Blanche (White Valley).</string>
-    <string name="CHARMONIX_MONT_BLANC_skiiLocationName">Chamonix-Mont-Blanc skii location</string>
-    <string name="CHARMONIX_MONT_BLANC_skiiLocationInfo">Chamonix-Mont-Blanc skii skii skii location info</string>
-    <string name="CHARMONIX_MONT_BLANC_skiiLocationFunFacts">Chamonix-Mont-Blanc fun facts</string>
-    <string name="CHARMONIX_MONT_BLANC_hikingLocationName">Chamonix-Mont-Blanc hiking trail</string>
-    <string name="CHARMONIX_MONT_BLANC_hikingLocationInfo">Chamonix-Mont-Blanc</string>
-    <string name="CHARMONIX_MONT_BLANC_hikingLocationFunFacts">Chamonix-Mont-Blanc</string>
-    <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationName">Chamonix-Mont-Blanc</string>
-    <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationInfo">Chamonix-Mont-Blanc</string>
-    <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationFunFacts">Chamonix-Mont-Blanc</string>
+    <string name="CHARMONIX_MONT_BLANC_skiiLocationName">Chamonix-Mont-Blanc Ski Resort</string>
+    <string name="CHARMONIX_MONT_BLANC_skiiLocationInfo">Located at the foot of Mont Blanc, Chamonix is one of the most iconic ski destinations in the world. It offers a wide range of slopes for all skill levels, from beginner-friendly runs to advanced off-piste terrain favored by professionals.</string>
+    <string name="CHARMONIX_MONT_BLANC_skiiLocationFunFacts">Chamonix hosted the first Winter Olympics in 1924! The resort is also known for its breathtaking views of Mont Blanc and world-class freeride skiing opportunities</string>
+    <string name="CHARMONIX_MONT_BLANC_hikingLocationName">Chamonix-Mont-Blanc Hiking Trails</string>
+    <string name="CHARMONIX_MONT_BLANC_hikingLocationInfo">Chamonix offers some of the most stunning alpine hikes in Europe, with trails ranging from scenic valley walks to challenging high-altitude routes. The Tour du Mont Blanc trail is especially popular among seasoned hikers.</string>
+    <string name="CHARMONIX_MONT_BLANC_hikingLocationFunFacts">The famous Mer de Glace glacier can be reached via a scenic hike from Chamonix. Along the way, you’ll pass mountain huts serving traditional Savoyard cuisine.</string>
+    <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationName">Chamonix-Mont-Blanc Rock Climbing</string>
+    <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationInfo">Chamonix is a rock climbing paradise, offering granite faces, alpine ridges, and bouldering areas. The Aiguilles de Chamonix and Vallée Blanche are particularly famous among climbers from around the globe.</string>
+    <string name="CHARMONIX_MONT_BLANC_rockClimbingLocationFunFacts">Chamonix is considered the birthplace of modern alpinism. Climbers from all over the world gather here to test their skills on legendary routes—and enjoy the local fondue after a long day on the rocks.</string>
 
-    <string name="MERIBEL_locationName">Meribel</string>
-    <string name="MERIBEL_locationInfo">Méribel is a ski resort in the Tarentaise Valley in the French Alps. Méribel refers to three neighbouring villages in the Les Allues commune of the Savoie department of France, near the town of Moûtiers (45.401°N 6.5655°E), called Méribel Centre, Méribel-Mottaret and Méribel Village. The villages are within Vanoise National Park and a part of the Les Trois Vallées interlinked ski system.</string>
-    <string name="MERIBEL_skiiLocationName">Meribel skii location</string>
-    <string name="MERIBEL_skiiLocationInfo">Meribel location info</string>
-    <string name="MERIBEL_skiiLocationFunFacts">Meribel fun facts</string>
-    <string name="MERIBEL_hikingLocationName">Meribel hiking trail</string>
-    <string name="MERIBEL_hikingLocationInfo">Meribel</string>
-    <string name="MERIBEL_hikingLocationFunFacts">Meribel</string>
-    <string name="MERIBEL_rockClimbingLocationName">Meribel</string>
-    <string name="MERIBEL_rockClimbingLocationInfo">Meribel</string>
-    <string name="MERIBEL_rockClimbingLocationFunFacts">Meribel</string>
+    <string name="MERIBEL_locationName">Méribel</string>
+    <string name="MERIBEL_locationInfo">Méribel is a ski resort in the Tarentaise Valley in the French Alps. Méribel refers to three neighbouring villages in the Les Allues commune of the Savoie department of France, near the town of Moûtiers, called Méribel Centre, Méribel-Mottaret and Méribel Village. The villages are within Vanoise National Park and a part of the Les Trois Vallées interlinked ski system.</string>
+    <string name="MERIBEL_skiiLocationName">Méribel Ski Resort</string>
+    <string name="MERIBEL_skiiLocationInfo">Nestled in the heart of the Three Valleys, the largest ski area in the world, Méribel offers perfectly groomed slopes, charming chalet-style architecture, and seamless ski-in/ski-out access. It\'s a favorite for both families and advanced skiers.</string>
+    <string name="MERIBEL_skiiLocationFunFacts">Méribel was one of the host resorts during the 1992 Albertville Winter Olympics and features over 600 km of interconnected ski slopes.</string>
+    <string name="MERIBEL_hikingLocationName">Méribel Hiking Trails</string>
+    <string name="MERIBEL_hikingLocationInfo">In summer, Méribel transforms into a hiker’s paradise with scenic alpine trails, wildflower meadows, and crystal-clear lakes. From gentle family walks to more challenging mountain ascents, there’s something for everyone</string>
+    <string name="MERIBEL_hikingLocationFunFacts">You can spot ibexes and marmots while hiking in Méribel, and the trails often pass through charming mountain hamlets and breathtaking viewpoints.</string>
+    <string name="MERIBEL_rockClimbingLocationName">Méribel Rock Climbing</string>
+    <string name="MERIBEL_rockClimbingLocationInfo">Méribel offers a variety of climbing opportunities, including natural rock faces and via ferrata routes. The nearby Vanoise National Park also provides spectacular alpine climbing experiences.</string>
+    <string name="MERIBEL_rockClimbingLocationFunFacts">Méribel\'s via ferrata routes allow climbers of different skill levels to enjoy safe but thrilling vertical adventures with breathtaking views over the valley!</string>
 
     <string name="COURCHEVEL_locationName">Courchevel</string>
     <string name="COURCHEVEL_locationInfo">Courchevel is a French Alps ski resort located in the Tarentaise Valley. It is a part of Les Trois Vallées, the largest linked ski areas in the world.
@@ -36,29 +36,29 @@ Chamonix is situated in the French Alps just north of Mont Blanc, the highest mo
 Courchevel also refers to the towns of Courchevel 1300 (Le Praz), Courchevel 1550, Courchevel 1650 (Moriond), and Courchevel 1850, which are named for their altitudes in metres. The resort centre of Courchevel is at 1,747 metres (5,732 ft).
 
 Sports events from the 1992 Winter Olympics and the 2023 World Ski Championships took place in Courchevel. The ski resort is considered exclusive, attracting wealthy clientele including royal families. It hosts one of the largest concentrations of 5-star ranking luxury hotels.</string>
-    <string name="COURCHEVEL_skiiLocationName">Courchevel skii location</string>
-    <string name="COURCHEVEL_skiiLocationInfo">Courchevel location info</string>
-    <string name="COURCHEVEL_skiiLocationFunFacts">Courchevel fun facts</string>
-    <string name="COURCHEVEL_hikingLocationName">Courchevel hiking trail</string>
-    <string name="COURCHEVEL_hikingLocationInfo">Courchevel</string>
-    <string name="COURCHEVEL_hikingLocationFunFacts">Courchevel</string>
-    <string name="COURCHEVEL_rockClimbingLocationName">Courchevel</string>
-    <string name="COURCHEVEL_rockClimbingLocationInfo">Courchevel</string>
-    <string name="COURCHEVEL_rockClimbingLocationFunFacts">Courchevel</string>
+    <string name="COURCHEVEL_skiiLocationName">Courchevel Ski Resort</string>
+    <string name="COURCHEVEL_skiiLocationInfo">Part of the prestigious Three Valleys ski area, Courchevel is renowned for its luxury accommodations, perfectly groomed slopes, and excellent lift system. It offers terrain for all levels, from gentle green runs to thrilling black pistes.</string>
+    <string name="COURCHEVEL_skiiLocationFunFacts">Courchevel is home to some of the most luxurious ski chalets and hotels in the world, often visited by celebrities and royalty. It also boasts a dedicated airstrip for private jets</string>
+    <string name="COURCHEVEL_hikingLocationName">Courchevel Hiking Trails</string>
+    <string name="COURCHEVEL_hikingLocationInfo">During the summer season, Courchevel transforms into a lush alpine escape with trails winding through pine forests, glacial lakes, and panoramic mountain views. Hikers can explore peaceful routes in La Tania, Le Praz, and the Vanoise National Park</string>
+    <string name="COURCHEVEL_hikingLocationFunFacts">Some of Courchevel\'s hiking routes lead to traditional alpine refuges where you can enjoy regional Savoyard dishes with stunning views of the French Alps</string>
+    <string name="COURCHEVEL_rockClimbingLocationName">Courchevel Rock Climbing</string>
+    <string name="COURCHEVEL_rockClimbingLocationInfo">Courchevel and its surrounding valleys offer diverse climbing options, from natural crags to thrilling via ferrata courses. The Pralognan-la-Vanoise area nearby is a hotspot for alpine climbing enthusiasts</string>
+    <string name="COURCHEVEL_rockClimbingLocationFunFacts">The nearby Dent du Villard rock formation offers unique limestone climbing experiences with stunning views over the Tarentaise Valley—perfect for adventurers.</string>
 
     <string name="VAL_DLSERVE_locationName">Val-d\`Isère</string>
     <string name="VAL_DLSERVE_locationInfo">Val-d\`Isère is a commune of the Tarentaise Valley, in the Savoie department (Auvergne-Rhône-Alpes region) in southeastern France. It lies 5 km (3 mi) from the border with Italy. It is on the border of the Vanoise National Park created in 1963, with good transport links in and out of Lyon, Geneva and Chambéry.
 
 During the Albertville 1992 Winter Olympics, the Face de Bellevarde was the site of the men\`s downhill race. Other alpine skiing events held during those games included men\`s giant slalom and alpine combined. Val d\`Isère regularly hosts World Cup alpine events, usually for the men in early December, and hosted the World Championships in 2009. The ski area of Val d\'Isère and Tignes forms the Espace Killy, named after the triple Olympic champion Jean-Claude Killy who grew up in Val d\'Isère. There are two mountain huts (called “refuges” in French) owned by the Vanoise National Park on the territory of Val d\'Isère: le Refuge du Prariond and le Refuge du Fond des Fours.</string>
-    <string name="VAL_DLSERVE_skiiLocationName">Val-d`Isère skii location</string>
-    <string name="VAL_DLSERVE_skiiLocationInfo">Val-d`Isère location info</string>
-    <string name="VAL_DLSERVE_skiiLocationFunFacts">Val-d`Isère fun facts</string>
-    <string name="VAL_DLSERVE_hikingLocationName">Val-d`Isère hiking trail</string>
-    <string name="VAL_DLSERVE_hikingLocationInfo">Val-d`Isère</string>
-    <string name="VAL_DLSERVE_hikingLocationFunFacts">Val-d`Isère</string>
-    <string name="VAL_DLSERVE_rockClimbingLocationName">Val-d`Isère</string>
-    <string name="VAL_DLSERVE_rockClimbingLocationInfo">Val-d`Isère</string>
-    <string name="VAL_DLSERVE_rockClimbingLocationFunFacts">Val-d`Isère</string>
+    <string name="VAL_DLSERVE_skiiLocationName">Val-d’Isère Ski Resort</string>
+    <string name="VAL_DLSERVE_skiiLocationInfo">Val-d’Isère, part of the vast Tignes–Val d’Isère ski area (formerly Espace Killy), is a legendary destination for winter sports lovers. Known for its reliable snowfall, challenging slopes, and vibrant après-ski scene, it caters to skiers of all levels</string>
+    <string name="VAL_DLSERVE_skiiLocationFunFacts">Val-d’Isère hosted several events during the 1992 Winter Olympics and regularly features on the World Cup alpine skiing circuit.</string>
+    <string name="VAL_DLSERVE_hikingLocationName">Val-d’Isère Hiking Trails</string>
+    <string name="VAL_DLSERVE_hikingLocationInfo">When the snow melts, Val-d’Isère reveals a network of stunning alpine trails. Hikers can explore glacial valleys, serene lakes, and high-mountain pastures within the Vanoise National Park, home to rich biodiversity and striking vistas.</string>
+    <string name="VAL_DLSERVE_hikingLocationFunFacts">Keep an eye out for alpine wildlife like chamois, marmots, and golden eagles—Val-d’Isère is one of the best spots in France for nature enthusiasts.</string>
+    <string name="VAL_DLSERVE_rockClimbingLocationName">Val-d’Isère Rock Climbing</string>
+    <string name="VAL_DLSERVE_rockClimbingLocationInfo">Val-d’Isère offers a mix of natural climbing spots and beginner-friendly via ferrata routes. Nearby crags and the rugged terrain of the Vanoise Alps attract climbers looking for both sport and alpine climbing experiences.</string>
+    <string name="VAL_DLSERVE_rockClimbingLocationFunFacts">The Via Ferrata du Roc de Tovière in Val-d’Isère is a thrilling route that combines iron ladders, suspension bridges, and incredible views over the Haute-Tarentaise valley.</string>
 
     <string name="ZERMATT_locationName">Zermatt</string>
     <string name="ZERMATT_locationInfo">Zermatt is a municipality in the district of Visp in the German-speaking section of the canton of Valais in Switzerland. It has a year-round population of about 5,800 and is classified as a town by the Swiss Federal Statistical Office (FSO).
@@ -159,7 +159,7 @@ Madonna di Campiglio is the main point of access to the Brenta Dolomites, with i
     <string name="COURMAYEUR_rockClimbingLocationFunFacts">Courmayeur</string>
 
     <string name="KITZBUHEL_locationName">Kitzbühel</string>
-    <string name="KITZBUHEL_locationInfo">Kitzbühel</string>
+    <string name="KITZBUHEL_locationInfo">Kitzbühel is a medieval town situated in the Kitzbühel Alps along the river Kitzbüheler Ache in Tyrol, Austria, about 100 km (62 mi) east of the state capital Innsbruck and is the administrative centre of the Kitzbühel district (Bezirk). Kitzbühel is one of the most famous and exclusive ski resorts in the world. It is frequented primarily by the international high society and has the most expensive real estate in Austria.[3] The proximity to Munich has made it a preferred location for vacation homes among the German elite.</string>
     <string name="KITZBUHEL_skiiLocationName">Kitzbühel</string>
     <string name="KITZBUHEL_skiiLocationInfo">Kitzbühel</string>
     <string name="KITZBUHEL_skiiLocationFunFacts">Kitzbühel</string>
@@ -171,7 +171,7 @@ Madonna di Campiglio is the main point of access to the Brenta Dolomites, with i
     <string name="KITZBUHEL_rockClimbingLocationFunFacts">Kitzbühel</string>
 
     <string name="ST_ANTON_AM_ARLBERG_locationName">St. Anton am Arlberg</string>
-    <string name="ST_ANTON_AM_ARLBERG_locationInfo">St. Anton am Arlberg</string>
+    <string name="ST_ANTON_AM_ARLBERG_locationInfo">Sankt Anton am Arlberg, commonly referred to as St Anton, is a village and ski resort in the Austrian state of Tyrol. It lies in the Tyrolean Alps, with aerial tramways and chairlifts up to 2,811 m, yielding a vertical drop of 1,507 m. It is also a popular summer resort among trekkers and mountaineers.</string>
     <string name="ST_ANTON_AM_ARLBERG_skiiLocationName">St. Anton am Arlberg</string>
     <string name="ST_ANTON_AM_ARLBERG_skiiLocationInfo">St. Anton am Arlberg</string>
     <string name="ST_ANTON_AM_ARLBERG_skiiLocationFunFacts">St. Anton am Arlberg</string>
@@ -183,7 +183,7 @@ Madonna di Campiglio is the main point of access to the Brenta Dolomites, with i
     <string name="ST_ANTON_AM_ARLBERG_rockClimbingLocationFunFacts">St. Anton am Arlberg</string>
 
     <string name="ISCHGL_locationName">Ischgl</string>
-    <string name="ISCHGL_locationInfo">Ischgl</string>
+    <string name="ISCHGL_locationInfo">Ischgl is a town in the Paznaun valley in the Austrian state of Tyrol. Its ski resort is connected with that of Samnaun across the border in Switzerland to form one of the largest in the Alps. Ischgl was a major hotspot in 2020 of the COVID-19 pandemic in Europe.</string>
     <string name="ISCHGL_skiiLocationName">Ischgl</string>
     <string name="ISCHGL_skiiLocationInfo">Ischgl</string>
     <string name="ISCHGL_skiiLocationFunFacts">Ischgl</string>
@@ -195,7 +195,7 @@ Madonna di Campiglio is the main point of access to the Brenta Dolomites, with i
     <string name="ISCHGL_rockClimbingLocationFunFacts">Ischgl</string>
 
     <string name="SOLDEN_locationName">Sölden</string>
-    <string name="SOLDEN_locationInfo">Sölden</string>
+    <string name="SOLDEN_locationInfo">Sölden is a municipality in the Ötztal valley of Tyrol, Austria.</string>
     <string name="SOLDEN_skiiLocationName">Sölden</string>
     <string name="SOLDEN_skiiLocationInfo">Sölden</string>
     <string name="SOLDEN_skiiLocationFunFacts">Sölden</string>

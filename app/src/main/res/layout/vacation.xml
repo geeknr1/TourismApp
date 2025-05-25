@@ -118,6 +118,12 @@
         android:textSize="15sp"
         android:textColor="@color/white"/>
 
+    <VideoView
+        android:id="@+id/hikingVideoID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
     <TextView
         android:id="@+id/rockClimbingLocationName"
         android:layout_width="wrap_content"
@@ -136,7 +142,7 @@
         android:id="@+id/rockClimbingLocationFunFacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
+        android:textSize="25sp"
         android:textColor="@color/white"/>
 
         <RadioGroup
@@ -197,7 +203,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Back to normal"
+                android:text="Main Info"
                 android:id="@+id/normal"
                 android:layout_gravity="center_horizontal"
                 android:checked="false"
