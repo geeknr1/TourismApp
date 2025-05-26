@@ -18,6 +18,7 @@ public class DbHelper extends SQLiteOpenHelper {
     private static final String colID = "ID";
     private static final String colName = "Name";
     private static final String colSurname = "Surname";
+    private static final String colUsername = "Username";
     private static final String colAge = "Age";
     private static final String colEmail = "Email";
     private static final String colPhoneNumber = "Phone_Number";
@@ -25,6 +26,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     private static final String createTable = "CREATE TABLE " + tableName + " (" +
             colID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+            colUsername + " TEXT NOT NULL, " +
             colName + " TEXT NOT NULL, " +
             colSurname + " TEXT NOT NULL, " +
             colAge + " TEXT NOT NULL, " +
@@ -61,14 +63,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
         return stringBuilder.toString();
     }
-
-    public static String getSalt() throws NoSuchAlgorithmException{ // prevents the collision of passwords that have been registered in the db
-        SecureRandom secureRandom = SecureRandom.getInstance("SHA1PRNG");
-        byte[] salt = new byte[32];
-        secureRandom.nextBytes(salt);
-        return android.util.Base64.encodeToString(salt, Base64.NO_WRAP);
-    }
-    public boolean addUser(String name, String surname, String age, String email, String phoneNumber, String password){
+    public boolean addUser(String name, String surname, String username, String age, String email, String phoneNumber, String password){
         try {
             String hashPass = hashPassword(password);
         }catch(Exception e){
@@ -80,6 +75,7 @@ public class DbHelper extends SQLiteOpenHelper {
         ContentValues content = new ContentValues();
         content.put(colName, name);
         content.put(colSurname, surname);
+        content.put(colUsername, username);
         content.put(colAge, age);
         content.put(colEmail, email);
         content.put(colPhoneNumber, phoneNumber);
@@ -104,7 +100,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     public boolean checkUser(String userName, String password){
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.query(tableName, new String[] {colPassword}, colName + "=?", new String[] {userName}, null, null, null);
+        Cursor cursor = db.query(tableName, new String[] {colPassword}, colUsername + "=?", new String[] {userName}, null, null, null);
 
         if(cursor != null && cursor.moveToFirst()){
             String storedHash = cursor.getString(cursor.getColumnIndexOrThrow(colPassword));

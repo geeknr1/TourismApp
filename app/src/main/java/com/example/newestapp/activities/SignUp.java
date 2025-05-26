@@ -15,7 +15,7 @@ import com.example.newestapp.R;
 public class SignUp extends AppCompatActivity {
     EditText name;
     EditText surname;
-
+    EditText username;
     EditText age;
     EditText email;
     EditText phoneNumber;
@@ -43,6 +43,7 @@ public class SignUp extends AppCompatActivity {
 
         name = findViewById(R.id.name);
         surname = findViewById(R.id.surname);
+        username = findViewById(R.id.username);
         age = findViewById(R.id.age);
         email = findViewById(R.id.email);
         phoneNumber = findViewById(R.id.phoneNumber);
@@ -53,19 +54,31 @@ public class SignUp extends AppCompatActivity {
         signUp.setOnClickListener(v->{
             String strName = name.getText().toString().trim();
             String strSurname = surname.getText().toString().trim();
+            String strUsername = username.getText().toString().trim();
             String strAge = age.getText().toString().trim();
             String strEmail = email.getText().toString().trim();
             String strPhoneNumber = phoneNumber.getText().toString().trim(); // trim este folosit pentru curatarea automata a spatiilor suplimentare
             String strPassword = password.getText().toString().trim();
             String strRePassword = rePassword.getText().toString().trim();
 
-            if(strName.isEmpty() || strSurname.isEmpty() || strAge.isEmpty() ||  strEmail.isEmpty() || strPhoneNumber.isEmpty() || strPassword.isEmpty() || strRePassword.isEmpty()){
+            if(strName.isEmpty() || strSurname.isEmpty() || strUsername.isEmpty() || strAge.isEmpty() ||  strEmail.isEmpty() || strPhoneNumber.isEmpty() || strPassword.isEmpty() || strRePassword.isEmpty()){
                 Toast.makeText(this, "Missing fields", Toast.LENGTH_SHORT).show();
                 return;
             }
 
+            boolean emailIsOK = strEmail.endsWith("@gmail.com");
+            boolean nameIsOK = Character.isUpperCase(strName.charAt(0));
+            boolean surnameIsOK = Character.isUpperCase(strSurname.charAt(0));
+            boolean phoneNumberIsOK = strPhoneNumber.matches("\\d+");
+            boolean ageIsOK = strAge.matches("\\d+");
+
+            if(!emailIsOK || !nameIsOK || !surnameIsOK || !phoneNumberIsOK || !ageIsOK){
+                Toast.makeText(this, "Incorrect info added.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             dbHelp = new DbHelper(this);
-            boolean ok = dbHelp.addUser(strName, strSurname, strAge, strEmail, strPhoneNumber, strPassword);
+            boolean ok = dbHelp.addUser(strName, strSurname, strUsername, strAge, strEmail, strPhoneNumber, strPassword);
 
             if (ok){
                 Toast.makeText(this, "User added in database", Toast.LENGTH_SHORT).show();
