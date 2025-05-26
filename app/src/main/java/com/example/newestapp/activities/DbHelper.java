@@ -13,7 +13,7 @@ import java.security.SecureRandom;
 
 public class DbHelper extends SQLiteOpenHelper {
     private static final String dbName = "GeoGuide.db";
-    private static final int dbVersion = 2;
+    private static final int dbVersion = 3;
     private static final String tableName = "Users";
     private static final String colID = "ID";
     private static final String colName = "Name";
@@ -36,7 +36,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     public DbHelper(Context context){
         super(context, dbName, null, dbVersion);
-    } // constructor pentru crearea definitiva a bazei de date
+    }
 
     public void onCreate(SQLiteDatabase db){
         db.execSQL(createTable);
@@ -113,9 +113,5 @@ public class DbHelper extends SQLiteOpenHelper {
         }
         return false;
     }
-
-
-
-
 
 }
