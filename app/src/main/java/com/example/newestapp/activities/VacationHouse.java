@@ -12,13 +12,13 @@ import androidx.fragment.app.Fragment;
 import com.example.newestapp.R;
 
 public class VacationHouse extends Fragment {
-    private static final String countryArgument = "arg_country";
+    private static final String nameArgument = "arg_country";
     private static final String photoResArgument = "arg_photo";
     private static final String vacationHouseDescriptionArgument = "arg_description";
 
     public static VacationHouse newInstance(VacationHouseModel m){
         Bundle args = new Bundle();
-        args.putString(countryArgument, m.countryName);
+        args.putString(nameArgument, m.countryName);
         args.putInt(photoResArgument, m.photoRes);
         args.putString(vacationHouseDescriptionArgument, m.vacationHouseDescription);
 
@@ -33,7 +33,7 @@ public class VacationHouse extends Fragment {
 
         Bundle args = getArguments();
         if (args != null) {
-            String country = args.getString(countryArgument);
+            String country = args.getString(nameArgument);
             int photoResId = args.getInt(photoResArgument);
             String description = args.getString(vacationHouseDescriptionArgument);
 
