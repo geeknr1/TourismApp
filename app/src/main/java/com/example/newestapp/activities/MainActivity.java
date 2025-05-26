@@ -19,15 +19,17 @@ import java.util.List;
 import com.example.newestapp.R;
 
 //import com.example.newestapp.data.DataProvider;
-import com.example.newestapp.models.Country;
 
 public class MainActivity extends Activity {
+    private Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        backButton = findViewById(R.id.backToMainMenu);
+        backButton.setVisibility(View.VISIBLE);
 
         spinnerSetup(R.id.spinnerSwitzerland, R.array.switzerland);
         spinnerSetup(R.id.spinnerFrance, R.array.france);
@@ -45,6 +47,13 @@ public class MainActivity extends Activity {
         spinnerSetup(R.id.spinnerBulgaria, R.array.bulgaria);
         spinnerSetup(R.id.spinnerNorthMacedonia, R.array.north_macedonia);
         spinnerSetup(R.id.spinnerGreece, R.array.greece);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Choose.class));
+            }
+        });
 
     }
 

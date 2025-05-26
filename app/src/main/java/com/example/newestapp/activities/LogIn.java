@@ -53,7 +53,7 @@ public class LogIn extends AppCompatActivity {
             }
             if(dbHelp.checkUser(user, pass)){ // the 'checkUser' method is of type 'boolean' since it's written in an 'if' statement
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(LogIn.this, MainActivity.class));
+                startActivity(new Intent(LogIn.this, Choose.class));
             }
             else{
                 Toast.makeText(this, "Username / Password incorrect", Toast.LENGTH_SHORT).show();

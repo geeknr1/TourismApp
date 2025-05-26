@@ -19,10 +19,6 @@
         <activity android:name=".activities.Choose"
             android:exported="true"/>
 
-        <activity
-            android:name=".activities.Destination_Detail_Activities"
-            android:exported="true"/>
-
         <activity android:name=".activities.SignUp"
             android:exported="true"/>
 

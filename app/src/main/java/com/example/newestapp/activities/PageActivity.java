@@ -16,14 +16,14 @@ import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.newestapp.models.Country;
+
 import com.example.newestapp.R;
 
 import java.util.*;
 
 
 public class PageActivity extends AppCompatActivity {
-    private Country country;
+
     private ArrayList<String> vacationSpots;
     private Button back;
 

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollRoot">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/vacationhouseatnight">
+
+    <TextView
+        android:id="@+id/vacationHouses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vacation Houses"
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/charmonixVacationHouseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Madame Vacances Chalet Mariefleur"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/charmonixHouseID"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/housecharmonix"/>
+
+    <TextView
+        android:id="@+id/charmonixVacationHouseDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Description:\n Luxury chalet in Méribel, sleeps 10–11 guests.\n
+5 en-suite bedrooms, 280 m², spread over 4 floors.\n
+Features: fireplace, cinema room, sauna, hammam, outdoor jacuzzi, and games room.\n
+Includes Wi-Fi, satellite TV, ski room, and private shuttle to the slopes.\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/charmonixVacationHouseContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Prices\n Self-catered: ~€360/night.\n
+Catered: ~€257/night.\n
+All-inclusive: ~€257/night.\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/charmonixVacationHousePricesPerNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Contact:\n +33 (0)4 79 65 08 41\n
+ info@madamevacances.com"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/meribelVacationHouseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="\n\nVilla Mont Blanc"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/housemeribel"/>
+
+    <TextView
+        android:id="@+id/meribelVacationHouseDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Description:\n
+        Location: 9 Chemin de la Cascade, Chamonix-Mont-Blanc, France\n
+Apartments: 3 self-catering units (Penthouse, Balcon, Terrace)\n
+Common features: Wi-Fi, full kitchen, 2 bathrooms, sauna, ski room, parking, terrace, and Mont Blanc views\n
+Up to 50 meters from slopes, walkable to town center.\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/meribelVacationHouseContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Prices:\n Penthouse (140 m²): 3 bedrooms, up to 7 guests — ~€360/night\n
+Balcon (80 m²): 2 bedrooms, 3 balconies, up to 5 guests — ~€257/night\n
+Terrace (80 m²): 2 bedrooms, large terrace with BBQ, up to 5 guests — ~€257/night\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/meribelVacationHousePricesPerNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Contact:\n booking via letsbookhotel.com or HiChee
+          chamconcierge.com \n"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/courchevelVacationHouseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Jardin D'angèle"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/housecourchevel"/>
+
+    <TextView
+        android:id="@+id/courchevelVacationHouseDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vacation Houses"
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/courchevelVacationHouseContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vacation Houses"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/courchevelVacationHousePricesPerNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vacation Houses"
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+    <TextView
+        android:id="@+id/valVacationHouseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vacation Houses"
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/houseval"/>
+
+    <TextView
+        android:id="@+id/valVacationHouseDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vacation Houses"
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/valVacationHouseContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vacation Houses"
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/valVacationHousePricesPerNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vacation Houses"
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+</LinearLayout>
+
+</ScrollView>
